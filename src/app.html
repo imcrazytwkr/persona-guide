@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" data-theme="crimson">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="text-scale" content="scale" />
+		<style>
+			html {
+				color-scheme: light dark;
+				background-color: light-dark(#fff, oklch(16.69% 0.02 275.16deg));
+			}
+			body {
+				background-color: inherit;
+			}
+		</style>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
