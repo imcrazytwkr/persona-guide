@@ -1,0 +1,1 @@
+import{$ as e,J as t,v as n,x as r}from"../chunks/BixRkyHU.js";import{a as i,o as a}from"../chunks/D0otqkLe.js";import"../chunks/xihTtKlq.js";function o(e,t){throw new a(e,t.toString())}var s=e({load:()=>c});function c(){o(307,i(`/p5r`))}function l(e){t();var i=r(`Welcome to SvelteKit`);n(e,i)}export{l as component,s as universal};
