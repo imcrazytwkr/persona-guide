@@ -1,29 +1,36 @@
-import type { GameId, SocialLink } from '$lib/types';
-import { chariot } from './chariot';
-import { councillor } from './councillor';
-import { death } from './death';
-import { devil } from './devil';
-import { emperor } from './emperor';
-import { empress } from './empress';
-import { faith } from './faith';
-import { fool } from './fool';
-import { fortune } from './fortune';
-import { hanged } from './hanged';
-import { hermit } from './hermit';
-import { hierophant } from './hierophant';
-import { judgement } from './judgement';
-import { justice } from './justice';
-import { lovers } from './lovers';
-import { magician } from './magician';
-import { moon } from './moon';
-import { priestess } from './priestess';
-import { star } from './star';
-import { strength } from './strength';
-import { sun } from './sun';
-import { temperance } from './temperance';
-import { tower } from './tower';
+import type { GameData, GameId, SocialLink } from '$lib/types';
 
-export const p5rLinks: SocialLink[] = [
+import {
+	fool,
+	magician,
+	priestess,
+	empress,
+	emperor,
+	hierophant,
+	lovers,
+	chariot,
+	justice,
+	hermit,
+	fortune,
+	strength,
+	hanged,
+	death,
+	temperance,
+	devil,
+	tower,
+	star,
+	moon,
+	sun,
+	judgement,
+	faith,
+	councillor
+} from './slinks';
+
+export const id: GameId = 'p5r';
+
+export const title = 'Persona 5 Royal';
+
+export const socialLinks: SocialLink[] = [
 	fool,
 	magician,
 	priestess,
@@ -49,13 +56,15 @@ export const p5rLinks: SocialLink[] = [
 	councillor
 ];
 
+export const gameData = Object.freeze<GameData>({ id, title, socialLinks });
+
 export function getLinks(game: GameId): SocialLink[] {
-	if (game === 'p5r') return p5rLinks;
+	if (game === 'p5r') return socialLinks;
 	return [];
 }
 
 export function getLink(game: GameId, arcana: string): SocialLink | undefined {
-	return getLinks(game).find((link) => link.arcana === arcana);
+	return getLinks(game).find((link) => link.arcana.value === arcana);
 }
 
 export function arcanaLabel(arcana: string): string {

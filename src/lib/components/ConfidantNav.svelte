@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
-	import { arcanaLabel, getLinks } from '$lib/data/p5r';
+	import { getLinks } from '$lib/data/p5r';
 	import { isGameId } from '$lib/games';
 	import { getRank } from '$lib/progress.svelte';
 	import type { GameId } from '$lib/types';
@@ -82,20 +82,20 @@
 				>
 					<Navigation.TriggerText>All confidants</Navigation.TriggerText>
 				</Navigation.TriggerAnchor>
-				{#each links as link (link.arcana)}
+				{#each links as link (link.arcana.value)}
 					<Navigation.TriggerAnchor
-						href={resolve(`/${game}/${link.arcana}`)}
-						class="btn min-h-11 w-full justify-between {arcana === link.arcana
+						href={resolve(`/${game}/${link.arcana.value}`)}
+						class="btn min-h-11 w-full justify-between {arcana === link.arcana.value
 							? 'preset-filled-primary-500'
 							: 'preset-tonal-surface'}"
-						aria-current={arcana === link.arcana ? 'page' : undefined}
+						aria-current={arcana === link.arcana.value ? 'page' : undefined}
 						onclick={close}
 					>
 						<Navigation.TriggerText class="truncate text-left">
-							{arcanaLabel(link.arcana)}
+							{link.arcana.label}
 						</Navigation.TriggerText>
 						<span class="chip preset-filled-surface-200-800">
-							{getRank(game, link.arcana)}
+							{getRank(game, link.arcana.value)}
 						</span>
 					</Navigation.TriggerAnchor>
 				{/each}

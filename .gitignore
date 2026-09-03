@@ -26,3 +26,7 @@ vite.config.ts.timestamp-*
 # IDE/editor
 .vscode
 .zed
+
+# Temp data
+src/**/*.html
+src/**/*.md

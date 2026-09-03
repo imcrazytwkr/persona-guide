@@ -17,9 +17,14 @@ export type Rank = {
 	unlocks: string[];
 };
 
+export type Arcana = {
+	label: string;
+	value: string;
+};
+
 export type SocialLink = {
 	game: GameId;
-	arcana: string;
+	arcana: Arcana;
 	name: string;
 	romanNumeral: string;
 	location: string;
@@ -31,4 +36,8 @@ export type SocialLink = {
 export type Game = {
 	id: GameId;
 	title: string;
+};
+
+export type GameData = Game & {
+	socialLinks: SocialLink[];
 };

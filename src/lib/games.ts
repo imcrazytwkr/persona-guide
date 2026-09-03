@@ -1,11 +1,16 @@
 import type { Game, GameId } from './types';
 
-export const games: Game[] = [{ id: 'p5r', title: 'Persona 5 Royal' }];
+const games: Game[] = [{ id: 'p5r', title: 'Persona 5 Royal' }];
+
+const gameIndex = games.reduce<Record<string, Game>>((acc, game) => {
+	acc[game.id] = game;
+	return acc;
+}, {});
 
 export function getGame(id: string): Game | undefined {
-	return games.find((game) => game.id === id);
+	return gameIndex[id];
 }
 
 export function isGameId(id: string): id is GameId {
-	return games.some((game) => game.id === id);
+	return Boolean(getGame(id));
 }

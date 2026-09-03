@@ -1,19 +1,18 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { getRank } from '$lib/progress.svelte';
-	import { arcanaLabel } from '$lib/data/p5r';
 	import type { SocialLink } from '$lib/types';
 
 	let { link }: { link: SocialLink } = $props();
 
-	const current = $derived(getRank(link.game, link.arcana));
-	const href = $derived(resolve(`/${link.game}/${link.arcana}`));
+	const current = $derived(getRank(link.game, link.arcana.value));
+	const href = $derived(resolve(`/${link.game}/${link.arcana.value}`));
 </script>
 
 <a {href} class="flex flex-col gap-3 card preset-filled-surface-100-900 p-4">
 	<div class="flex items-start justify-between gap-3">
 		<div>
-			<p class="text-sm opacity-70">{arcanaLabel(link.arcana)} {link.romanNumeral}</p>
+			<p class="text-sm opacity-70">{link.arcana.label}</p>
 			<h2 class="text-lg font-bold">{link.name}</h2>
 		</div>
 		{#if current < 10}
