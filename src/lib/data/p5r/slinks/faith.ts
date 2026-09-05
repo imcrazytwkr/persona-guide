@@ -6,11 +6,11 @@ export const faith: SocialLink = {
 		label: 'Faith',
 		value: 'faith'
 	},
-	name: 'Kasumi Yoshizawa',
+	name: 'Sumire Yoshizawa',
 	location: 'Kichijoji',
 	unlock: 'Unmissable event on the 5/30 field trip.',
 	availability:
-		'Lunchtime during school and after school. In June, September, October and November she is available only on Wednesday. In July, August and December she is also occasionally available on Thursday and Sunday.',
+		'Lunchtime during school and after school. In June, September, October, and November she is available only on Wednesday. In July, August, and December she is also occasionally available on Thursday and Sunday.',
 	ranks: [
 		{
 			rank: 1,
@@ -36,11 +36,12 @@ export const faith: SocialLink = {
 					options: [{ text: 'Next time, then.', points: 2 }]
 				},
 				{
-					prompt: "Phone (P5R): Then my stomach wouldn't stop growling in my meeting.",
+					prompt:
+						"I was so relieved, I suddenly got really hungry... and then my stomach wouldn't stop growling in my meeting.",
 					options: [{ text: 'Impressive.', points: 2 }]
 				}
 			],
-			unlocks: ['+5 HP', 'Tumbling']
+			unlocks: ['Tumbling', '+5 HP']
 		},
 		{
 			rank: 3,
@@ -48,10 +49,11 @@ export const faith: SocialLink = {
 			choices: [
 				{
 					prompt: "And I figured something out! It's this!",
-					options: [{ text: 'Making Bento?', points: 3 }]
+					options: [{ text: 'Making bento?', points: 3 }]
 				},
 				{
-					prompt: 'Do you want it?',
+					prompt:
+						'I made this specifically with your body type in mind, and knowing how much you exercise... Do you want it?',
 					options: [
 						{ text: "I'm touched!", points: 2 },
 						{ text: 'It looks delicious.', points: 2 }
@@ -65,15 +67,16 @@ export const faith: SocialLink = {
 					]
 				},
 				{
-					prompt: 'You okay? Your eyes are glazing over...',
+					prompt: '<protagonist>-senpai? You okay? Your eyes are glazing over...',
 					options: [{ text: "It's definitely unique.", points: 2 }]
 				},
 				{
-					prompt: 'I thought it was so great when I presented it to you, and now...',
+					prompt:
+						"I'm so embarrassed... I thought it was so great when I presented it to you, and now...",
 					options: [
 						{ text: 'You could try again sometime?', points: 3 },
-						{ text: 'Just keep at it.', points: 3 },
-						{ text: 'It happens.', points: 2 }
+						{ text: 'It happens.', points: 3 },
+						{ text: 'Just keep at it.', points: 3 }
 					]
 				}
 			],
@@ -89,12 +92,19 @@ export const faith: SocialLink = {
 					options: [{ text: "You're looking to buy?", points: 2 }]
 				},
 				{
-					prompt: 'You look so cool! What do you think?',
-					options: [{ text: 'A pretty modern look.', points: 3 }]
+					prompt: 'What do you think?',
+					options: [
+						{ text: 'A pretty modern look.', points: 3 },
+						{ text: 'I look so aloof in these.', points: 2 }
+					]
 				},
 				{
-					prompt: 'Would you mind poking around with me for a bit longer?',
-					options: [{ text: 'Of course.', points: 2 }]
+					prompt:
+						"But your input's been really helpful so far! Would you mind poking around with me for a bit longer?",
+					options: [
+						{ text: 'Of course.', points: 2 },
+						{ text: "Let's keep going.", points: 2 }
+					]
 				},
 				{
 					prompt: "I don't know how to describe it. It just seems perfect for my dad somehow.",
@@ -106,11 +116,18 @@ export const faith: SocialLink = {
 					options: [{ text: 'Everyone deals with that.', points: 2 }]
 				},
 				{
-					prompt: 'Phone (P5R): He was so happy with them!',
-					options: [{ text: "I'm glad to hear that.", points: 2 }]
+					prompt: 'And having your support makes me even more determined to make that happen.',
+					options: [{ text: "We'll work at it together.", points: 2 }]
+				},
+				{
+					prompt: 'And it suits him even better than I imagined! He was so happy with them!',
+					options: [
+						{ text: "I'm glad to hear that.", points: 2 },
+						{ text: 'You should be more confident.', points: 2 }
+					]
 				}
 			],
-			unlocks: ['Chaines Hook']
+			unlocks: ['Chaînés Hook', '+5 HP']
 		},
 		{
 			rank: 5,
@@ -131,8 +148,8 @@ export const faith: SocialLink = {
 				{
 					prompt: 'I did it, Senpai! I hit the ball!',
 					options: [
-						{ text: 'I saw!', points: 3 },
 						{ text: 'Congratulations.', points: 3 },
+						{ text: 'I saw!', points: 3 },
 						{ text: "How's that feel?", points: 2 }
 					]
 				},
@@ -144,9 +161,10 @@ export const faith: SocialLink = {
 					]
 				},
 				{
-					prompt: 'Phone (P5R): Was there anything else you wanted to try, Senpai?',
+					prompt:
+						"It's nice to dip into sports aside from gymnastics. Was there anything else you wanted to try, Senpai?",
 					options: [
-						{ text: 'Swimming', points: 3 },
+						{ text: 'Swimming.', points: 3 },
 						{ text: 'Gymnastics.', points: 3 },
 						{ text: 'Running.', points: 2 }
 					]
@@ -159,92 +177,94 @@ export const faith: SocialLink = {
 			requirements: 'Locked until 1/13. Locked out forever if Rank 5 was not reached before then.',
 			choices: [
 				{
-					prompt: 'Phone (P5R): This is the real me, I guess.',
-					options: [
-						{ text: 'You have to face it.', points: 2 },
-						{ text: 'So what if it is?', points: 2 }
-					]
+					prompt: '...But this is the real me, I guess.',
+					options: [{ text: 'You have to face it.', points: 3 }]
 				}
 			],
-			unlocks: ['+5 HP', 'Follow Up', 'Fitness Talk']
+			unlocks: ['Follow Up', 'Fitness Talk', '+5 HP']
 		},
 		{
 			rank: 7,
 			requirements: '',
 			choices: [
 				{
-					prompt: 'Siiigh...',
-					options: [{ text: 'You okay?', points: 2 }]
+					prompt: '*Siiigh...*',
+					options: [{ text: 'You okay?', points: 3 }]
 				},
 				{
-					prompt: "I'm just worthless after all…",
+					prompt: "I'll always be someone less than Kasumi. I'm just worthless after all...",
 					options: [{ text: "That isn't true.", points: 3 }]
 				},
 				{
 					prompt: 'Senpai, will you go out with me again?',
 					options: [
 						{ text: 'Of course.', points: 3 },
-						{ text: 'Another love confession?', points: 3 },
-						{ text: 'I could watch you forever.', points: 2 }
+						{ text: 'I could watch you forever.', points: 3 },
+						{ text: 'Another love confession?', points: 3 }
 					]
 				},
 				{
-					prompt: 'Phone (P5R): You might be just as tough as Kasumi... Amazing.',
-					options: [{ text: 'I love a good challenge.', points: 2 }]
+					prompt:
+						"It didn't seem like you were struggling at all, though. You might be just as tough as Kasumi... Amazing.",
+					options: [{ text: 'I love a good challenge.', points: 3 }]
 				}
 			],
-			unlocks: ['+5 HP', 'Harisen Recovery']
+			unlocks: ['Harisen Recovery', '+5 HP']
 		},
 		{
 			rank: 8,
 			requirements: '',
 			choices: [
 				{
-					prompt: "Well, I guess it's important to have a balanced diet...?",
+					prompt: "I see. Well, I guess it's important to have a balanced diet...?",
 					options: [{ text: 'Walk up to Sumire', points: 3 }]
 				},
 				{
 					prompt: "I don't even know if I'm worth showing off, let alone how to do it...",
 					options: [
+						{ text: 'Try to stay positive.', points: 3 },
 						{ text: "I'm here for you.", points: 3 },
-						{ text: 'Try to stay positive.', points: 2 },
-						{ text: "It'll all work out.", points: 2 }
+						{ text: "It'll work out.", points: 3 }
 					]
 				},
 				{
 					prompt: 'Um, what do you think?',
-					options: [{ text: "I'm in love.", points: 3 }]
-				},
-				{
-					prompt: "I don't think that'd change how I feel about it.",
 					options: [
-						{ text: 'Sounds like progress.', points: 3 },
-						{ text: "That's how it should be.", points: 2 }
+						{ text: 'It looks great.', points: 3 },
+						{ text: 'You look really cute.', points: 3 },
+						{ text: "I'm in love.", points: 3 }
 					]
 				},
 				{
-					prompt: 'Phone (P5R): B-By the way, where do you like to get your clothes from, Senpai?',
+					prompt: "Even if you didn't like it... I don't think that'd change how I feel about it.",
 					options: [
-						{ text: 'The resale shop.', points: 2 },
-						{ text: 'Online.', points: 2 }
+						{ text: "That's how it should be.", points: 3 },
+						{ text: 'Sounds like progress.', points: 3 }
+					]
+				},
+				{
+					prompt: 'B-By the way, where do you like to get your clothes from, Senpai?',
+					options: [
+						{ text: 'The resale shop.', points: 3 },
+						{ text: 'Online.', points: 3 }
 					]
 				}
 			],
-			unlocks: ['+5 HP', 'Endure']
+			unlocks: ['Endure', '+5 HP']
 		},
 		{
 			rank: 9,
 			requirements: '',
 			choices: [
 				{
-					prompt: "I hope it's not too much trouble.",
+					prompt: "Sorry for dropping in on you like this. I hope it's not too much trouble.",
 					options: [
 						{ text: "It's no problem.", points: 3 },
 						{ text: "We'll call it holiday hours.", points: 3 }
 					]
 				},
 				{
-					prompt: "I'd like you to be there when I do... Is that okay?",
+					prompt: 'And if you wouldn’t mind, I’d like you to be there when I do... Is that okay?',
 					options: [
 						{ text: 'Definitely.', points: 3 },
 						{ text: 'Of course.', points: 3 }
@@ -255,7 +275,7 @@ export const faith: SocialLink = {
 					options: [{ text: 'Of course I do.', points: 3 }]
 				},
 				{
-					prompt: 'I hope I still helped Kasumi somehow...',
+					prompt: 'Even as worthless as I am, I hope I still helped Kasumi somehow...',
 					options: [
 						{ text: 'I know you did.', points: 3 },
 						{ text: "You're not worthless.", points: 3 },
@@ -263,49 +283,67 @@ export const faith: SocialLink = {
 					]
 				},
 				{
-					prompt: "There's something I need to tell you, Senpai!",
+					prompt: "Th-There's something I need to tell you, Senpai!",
 					options: [{ text: 'Go ahead.', points: 3 }]
 				},
 				{
-					prompt: 'The last thing I want to do is make you uncomfortable, so...',
+					prompt: 'Um, but... The last thing I want to do is make you uncomfortable, so...',
 					options: [
-						{ text: "Let's stay friends, okay?", points: 0 },
-						{ text: 'I love you too.', points: 0 }
+						{ text: "Let's stay friends, okay?", points: 0, routeFlag: 'friendship' },
+						{ text: 'I love you too.', points: 0, routeFlag: 'romance' }
 					]
 				},
 				{
-					prompt: "Friendship: Just watch me and I promise I'll keep improving!",
+					prompt: 'Oh... what am I saying...?',
+					route: 'romance',
 					options: [
+						{ text: 'Calm down.', points: 3 },
+						{ text: 'Take your time.', points: 3 }
+					]
+				},
+				{
+					prompt: 'I-I—um—you—',
+					route: 'romance',
+					options: [
+						{ text: 'So? Any different?', points: 3 },
+						{ text: 'You are so red right now.', points: 3 },
+						{ text: "You're so cute.", points: 3 }
+					]
+				},
+				{
+					prompt:
+						"It feels as if I'm constantly riding a rollercoaster... I don't know what to do!",
+					route: 'romance',
+					options: [{ text: 'Get used to it.', points: 3 }]
+				},
+				{
+					prompt: "Just watch me and I promise I'll keep improving!",
+					route: 'friendship',
+					options: [
+						{ text: 'Show me your best.', points: 3 },
 						{ text: "I can't wait to see it.", points: 3 },
 						{ text: 'You can always rely on me.', points: 3 }
 					]
 				},
 				{
 					prompt:
-						"Phone (P5R, friendship): I really think I've matured. And I'm really glad for your part in that, Senpai.",
-					options: [{ text: "I'm glad to hear that.", points: 2 }]
-				},
-				{
-					prompt: 'Romance: What am I saying...?',
-					options: [{ text: 'Calm down.', points: 3 }]
-				},
-				{
-					prompt: 'Romance: I-I--Um--you--',
-					options: [{ text: "You're so cute.", points: 3 }]
-				},
-				{
-					prompt: "Phone (P5R, romance): I don't know what to do!",
-					options: [{ text: 'Get used to it.', points: 3 }]
+						"I really feel like I've matured. And I'm really glad for your part in that, Senpai.",
+					route: 'friendship',
+					options: [
+						{ text: "I'm glad to hear that.", points: 3 },
+						{ text: "I'll always have your back.", points: 3 }
+					]
 				}
 			],
-			unlocks: ['+5 HP', 'Protect']
+			unlocks: ['Protect', '+5 HP']
 		},
 		{
 			rank: 10,
 			requirements: '',
 			choices: [
 				{
-					prompt: "Friendship: I genuinely can't thank you enough.",
+					prompt: "I genuinely can't thank you enough.",
+					route: 'friendship',
 					options: [
 						{ text: 'You did all the work.', points: 3 },
 						{ text: "We're not done yet.", points: 3 },
@@ -313,15 +351,16 @@ export const faith: SocialLink = {
 					]
 				},
 				{
-					prompt: 'Friendship: All three of us taking on the world as a team!',
-					options: [{ text: 'Bring it on.', points: 3 }]
+					prompt: "...as well as discovering what's most important to me while performing.",
+					route: 'romance',
+					options: [
+						{ text: 'What do you mean?', points: 3 },
+						{ text: 'Is it someone you love?', points: 3 }
+					]
 				},
 				{
-					prompt: "Romance: ...what's most important to me while performing.",
-					options: [{ text: 'Is it someone you love?', points: 3 }]
-				},
-				{
-					prompt: 'Romance: I want to keep my promise with her.',
+					prompt:
+						"That's why I want to turn this world back to how it used to be. I want to keep my promise with her.",
 					options: [
 						{ text: "I'm counting on you.", points: 3 },
 						{ text: "Don't get ahead of yourself.", points: 3 },
@@ -329,7 +368,7 @@ export const faith: SocialLink = {
 					]
 				}
 			],
-			unlocks: ['+5 HP', 'Second Awakening']
+			unlocks: ['Second Awakening', 'Maria fusion', '+5 HP']
 		}
 	]
 };
