@@ -34,21 +34,14 @@ export const hanged: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: 'Choice 1:',
+					prompt: "...Sounds like there's some weird stuff goin' down.",
 					options: [
-						{ text: 'Maybe I should call him.', points: 0 },
-						{ text: "That's probably the signal.", points: 0 }
-					]
-				},
-				{
-					prompt: "Sounds like there's some weird stuff goin' down.",
-					options: [
-						{ text: "How's your cold?", points: 2 },
-						{ text: 'What should I do now?', points: 2 }
+						{ text: 'What should I do now?', points: 2 },
+						{ text: "How's your cold?", points: 2 }
 					]
 				}
 			],
-			unlocks: ['+Proficiency']
+			unlocks: ['+2 Proficiency']
 		},
 		{
 			rank: 3,
@@ -58,33 +51,34 @@ export const hanged: SocialLink = {
 					prompt: 'The same clan I was in... back when I was part of the yakuza.',
 					options: [
 						{ text: 'I always knew you were a thug.', points: 3 },
-						{ text: 'Y-Yakuza?!', points: 2 }
+						{ text: 'Y-Yakuza!?', points: 2 }
 					]
 				},
 				{
-					prompt: "..Hope I ain't scarin' you off with all this talk.",
+					prompt: "...Hope I ain't scarin' you off with all this talk.",
 					options: [{ text: "We made a deal, didn't we?", points: 3 }]
 				}
 			],
-			unlocks: ['Medium Customization', '+Proficiency']
+			unlocks: ['Camo Customization', '+2 Proficiency']
 		},
 		{
 			rank: 4,
 			requirements: '',
 			choices: [
 				{
-					prompt: "I'm gonna be able to give Tsuda a real scare thanks to the info you gave me!",
+					prompt:
+						"Anyways, nice job. I'm gonna be able to give Tsuda a real scare thanks to the info you gave me!",
 					options: [
 						{ text: "Where's my reward?", points: 3 },
 						{ text: 'You two should play nice.', points: 2 }
 					]
 				},
 				{
-					prompt: 'Phone (P5R): Now Tsuda knows your face. And that could be a real problem.',
+					prompt: 'But now Tsuda knows your face. And that could be a real problem.',
 					options: [{ text: 'I agree.', points: 2 }]
 				}
 			],
-			unlocks: ['+Proficiency']
+			unlocks: ['+2 Proficiency']
 		},
 		{
 			rank: 5,
@@ -102,18 +96,18 @@ export const hanged: SocialLink = {
 					]
 				},
 				{
-					prompt: "Phone (P5R): But I gotta protect that secret, no matter what. For Kaoru's sake.",
+					prompt: "But I gotta protect that secret, no matter what. For Kaoru's sake.",
 					options: [{ text: "You're right.", points: 2 }]
 				}
 			],
-			unlocks: ['Discount (gun customization)', '+Proficiency']
+			unlocks: ['Discount (gun customization)', '+2 Proficiency']
 		},
 		{
 			rank: 6,
 			requirements: '',
 			choices: [
 				{
-					prompt: "What've you been talkin' about?",
+					prompt: "You two look like you're havin' fun. What've you been talkin' about?",
 					options: [
 						{ text: 'Girls.', points: 3 },
 						{ text: "That's a secret.", points: 3 },
@@ -128,7 +122,7 @@ export const hanged: SocialLink = {
 					]
 				},
 				{
-					prompt: 'Phone (P5R): Glad to see you two get along.',
+					prompt: 'Looked like you and Kaoru really hit it off. Glad to see you two get along.',
 					options: [
 						{ text: "He's my age, so it comes easier.", points: 2 },
 						{ text: 'All I did was listen to him.', points: 2 }
@@ -142,10 +136,10 @@ export const hanged: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: "Don't somethin' about that seem off to you?",
+					prompt: "I mean, don't somethin' about that seem off to you?",
 					options: [
 						{ text: 'Absolutely.', points: 3 },
-						{ text: 'I guess he likes guns.', points: 2 }
+						{ text: 'I guess he likes guns?', points: 2 }
 					]
 				},
 				{
@@ -156,11 +150,11 @@ export const hanged: SocialLink = {
 					]
 				},
 				{
-					prompt: "Phone (P5R): We can't afford to take any chances.",
+					prompt: "But considering who we're dealin' with... we can't afford to take any chances.",
 					options: [{ text: 'Bring it on.', points: 2 }]
 				}
 			],
-			unlocks: ['Expert Customization', '+Proficiency']
+			unlocks: ['Expert Customization']
 		},
 		{
 			rank: 8,
@@ -178,11 +172,11 @@ export const hanged: SocialLink = {
 					prompt: 'Just forget all of this...',
 					options: [
 						{ text: 'I will.', points: 2 },
-						{ text: 'I want to help.', points: 2 }
+						{ text: 'I want to help you.', points: 2 }
 					]
 				},
 				{
-					prompt: 'You think a guy can really go through a drastic change that quick?',
+					prompt: 'Hey, you think a guy can really go through a drastic change that quick?',
 					options: [{ text: 'I dunno.', points: 2 }]
 				},
 				{
@@ -195,11 +189,11 @@ export const hanged: SocialLink = {
 					]
 				},
 				{
-					prompt: "Phone (P5R): Seemed like he was on the level, but... can't be too careful.",
+					prompt: "Seemed like he was on the level, but... can't be too careful.",
 					options: [{ text: 'Understood.', points: 2 }]
 				}
 			],
-			unlocks: ['Mementos request: Shady Deal in the Shadows', '+Proficiency']
+			unlocks: ['+2 Proficiency', 'Mementos request: Shady Deal in the Shadows']
 		},
 		{
 			rank: 9,
@@ -208,7 +202,7 @@ export const hanged: SocialLink = {
 				{
 					prompt: 'Serves him right, huh?',
 					options: [
-						{ text: "Are you sure he's alive?", points: 3 },
+						{ text: "Are you sure he's still alive?", points: 3 },
 						{ text: "That's great news.", points: 2 }
 					]
 				},
@@ -222,13 +216,13 @@ export const hanged: SocialLink = {
 				{
 					prompt: "Guess you're maturin' quicker than I even realized...",
 					options: [
+						{ text: 'Kaoru is really strong-willed.', points: 3 },
 						{ text: "He's a cool kid, huh?", points: 3 },
-						{ text: 'Kaoru is really strong willed.', points: 3 },
 						{ text: 'He gets that maturity from you.', points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): ...The kid must've grown into a man while I wasn't looking.",
+					prompt: "...The kid must've grown into a man while I wasn't looking.",
 					options: [
 						{ text: 'Like father, like son.', points: 2 },
 						{ text: 'Gecko bonds go beyond blood.', points: 2 }
@@ -240,8 +234,21 @@ export const hanged: SocialLink = {
 		{
 			rank: 10,
 			requirements: '',
-			choices: [],
-			unlocks: ['Special Customization', 'Attis fusion', '+Proficiency']
+			choices: [
+				{
+					prompt: '......',
+					options: [
+						{ text: "It's up to you now, Iwai.", points: 3 },
+						{ text: "Kaoru won't lose.", points: 3 }
+					]
+				},
+				{
+					prompt:
+						"I can't be the only one who was saved by his change of heart. Wonder who else knows...",
+					options: [{ text: "What if you're right?", points: 2 }]
+				}
+			],
+			unlocks: ['Attis fusion', 'On The House', '+2 Proficiency']
 		}
 	]
 };
