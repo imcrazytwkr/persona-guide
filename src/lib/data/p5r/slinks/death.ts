@@ -37,11 +37,11 @@ export const death: SocialLink = {
 					options: [{ text: 'I have a bad heart.', points: 2 }]
 				},
 				{
-					prompt: "I'm so over this.",
+					prompt: "*sigh* I'm so over this...",
 					options: [{ text: 'I agree.', points: 2 }]
 				},
 				{
-					prompt: 'Phone (P5R): You know how it is. Some patients get sick on their way back home.',
+					prompt: 'You know how it is. Some patients get sick on their way back home.',
 					options: [
 						{ text: "I'm totally fine.", points: 2 },
 						{ text: 'I think I have superpowers.', points: 2 }
@@ -62,7 +62,7 @@ export const death: SocialLink = {
 					]
 				},
 				{
-					prompt: "Phone (P5R): You… haven't told anyone about my drugs, right?",
+					prompt: "You... haven't told anyone about my drugs, right?",
 					options: [{ text: 'Of course not.', points: 2 }]
 				}
 			],
@@ -77,7 +77,7 @@ export const death: SocialLink = {
 					options: [{ text: 'Dr. Takemi will help.', points: 2 }]
 				},
 				{
-					prompt: 'Hehe.',
+					prompt: '...Hehe.',
 					options: [
 						{ text: 'You seem happy.', points: 3 },
 						{ text: "You're so kind.", points: 2 },
@@ -85,9 +85,8 @@ export const death: SocialLink = {
 					]
 				},
 				{
-					prompt:
-						"Phone (P5R): Especially after approving that girl's consultation without my permission.",
-					options: [{ text: "I'll reflect on my mistakes", points: 2 }]
+					prompt: "Especially after approving that girl's consultation without my permission.",
+					options: [{ text: "I'll reflect on my mistakes.", points: 2 }]
 				}
 			],
 			unlocks: ['+1 Guts']
@@ -105,7 +104,7 @@ export const death: SocialLink = {
 				},
 				{
 					prompt:
-						"Phone (P5R): Also… sorry for the long talk today. I wasn't planning on telling you all that.",
+						"Also... sorry for the long talk today. I wasn't planning on telling you all that.",
 					options: [{ text: 'About Miwa-chan?', points: 2 }]
 				}
 			],
@@ -124,14 +123,14 @@ export const death: SocialLink = {
 				},
 				{
 					prompt:
-						"Phone (P5R): I'll need you to stick around just a little bit longer. I hope you can handle it.",
+						"I'll need you to stick around just a little bit longer. I hope you can handle it.",
 					options: [
 						{ text: 'You can count on me.', points: 2 },
 						{ text: 'Anything for you.', points: 2 }
 					]
 				}
 			],
-			unlocks: []
+			unlocks: ['+1 Guts']
 		},
 		{
 			rank: 7,
@@ -156,11 +155,11 @@ export const death: SocialLink = {
 					prompt: "Ugh. I wish I hadn't shown you that side of me...",
 					options: [
 						{ text: 'We all do sometimes.', points: 3 },
-						{ text: "I'm glad you did.", points: 2 }
+						{ text: "I'm glad you did. (Romance flag)", points: 2 }
 					]
 				}
 			],
-			unlocks: ['Discount']
+			unlocks: ['Discount', '+1 Guts']
 		},
 		{
 			rank: 8,
@@ -169,7 +168,7 @@ export const death: SocialLink = {
 			choices: [
 				{
 					prompt: "I'm all out of allies...",
-					options: [{ text: "I'm your ally.", points: 2 }]
+					options: [{ text: "I'm your ally. (Romance flag)", points: 2 }]
 				},
 				{
 					prompt: "So she's... she's alive...",
@@ -180,30 +179,30 @@ export const death: SocialLink = {
 					]
 				},
 				{
-					prompt: 'Sorry. Just hang in there, OK?',
+					prompt: '...Sorry. Just hang in there, okay?',
 					options: [
+						{ text: "It's for Miwa-chan. (Romance flag)", points: 3 },
 						{ text: "It's for you.", points: 3 },
-						{ text: "It's for Miwa-chan.", points: 3 },
 						{ text: "It's for my exams.", points: 2 }
 					]
 				},
 				{
-					prompt:
-						'Phone (P5R): Miwa-chan was fighting all that time. I have to fight for her, too.',
+					prompt: 'Miwa-chan was fighting all that time. I have to fight for her, too.',
 					options: [
 						{ text: "I'll be cheering you on.", points: 2 },
 						{ text: 'Anything else I can do?', points: 2 }
 					]
 				}
 			],
-			unlocks: ['Mementos request: Bad Medicine']
+			unlocks: ['+1 Guts', 'Mementos request: Bad Medicine']
 		},
 		{
 			rank: 9,
 			requirements: '',
 			choices: [
 				{
-					prompt: 'All this is thanks to you helping me with the clinical trials.',
+					prompt:
+						'I have to thank you again. All this is thanks to you helping me with the clinical trials.',
 					options: [
 						{ text: 'It was rough.', points: 3 },
 						{ text: "Don't worry about it.", points: 2 },
@@ -213,21 +212,19 @@ export const death: SocialLink = {
 				{
 					prompt: "Why don't you tell me the truth about why you kept coming to me?",
 					options: [
-						{ text: 'I wanted to see you.', points: 0 },
-						{ text: 'It was for my exams.', points: 0 }
+						{ text: 'I wanted to see you. (Romance route)', points: 0 },
+						{ text: 'It was for my exams. (Platonic route)', points: 0 }
 					]
 				},
 				{
-					prompt:
-						'...Don\'t tell me you\'re in love with me or something. (only if you said "I wanted to see you")',
+					prompt: "...Don't tell me you're in love with me or something. (Romance)",
 					options: [
 						{ text: 'I love you.', points: 2 },
 						{ text: 'What do you think?', points: 0 }
 					]
 				},
 				{
-					prompt:
-						'Or... I can give you a "special examination" if you\'d like. (only if you said "I love you.")',
+					prompt: "Or... I can give you a 'special examination' if you'd like. (Romance)",
 					options: [
 						{ text: "It isn't a joke.", points: 3 },
 						{ text: 'That sounds good.', points: 0 }
@@ -235,22 +232,42 @@ export const death: SocialLink = {
 				},
 				{
 					prompt:
-						"Phone (P5R, not romanced): You really are the best guinea pig I could've hoped for",
-					options: [{ text: "I'm glad we saw it through.", points: 2 }]
+						"Turns out my little guinea pig caught an illness that's even more annoying and persistent than Crawford-Ende's. (Romance)",
+					options: [
+						{ text: 'So did you.', points: 2 },
+						{ text: "It's true love.", points: 0 },
+						{ text: "I've always loved you.", points: 0 }
+					]
 				},
 				{
-					prompt:
-						"Phone (P5R, romanced): Turns out my little guinea pig caught an illness that's even more annoying and persistent than Crawford-Ende's",
-					options: [{ text: 'So did you.', points: 2 }]
+					prompt: "You really are the best guinea pig I could've hoped for. (Platonic)",
+					options: [
+						{ text: "I'm glad we saw it through.", points: 2 },
+						{ text: "You're welcome.", points: 0 },
+						{ text: 'It was a breeze.', points: 0 }
+					]
 				}
 			],
-			unlocks: ['Inokashira Park (if not already unlocked)']
+			unlocks: ['Inokashira Park']
 		},
 		{
 			rank: 10,
 			requirements: '',
-			choices: [],
-			unlocks: ['Resuscitation', 'Alice fusion']
+			choices: [
+				{
+					prompt:
+						"And to have it happen when it did... Isn't the only logical conclusion to think that it's you?",
+					options: [{ text: 'I wonder...', points: 2 }]
+				},
+				{
+					prompt: "Really... Then, would you like a 'thorough examination'? (Romance)",
+					options: [
+						{ text: 'Yes, please.', points: 3 },
+						{ text: 'What kind?', points: 2 }
+					]
+				}
+			],
+			unlocks: ['Alice fusion', 'Resuscitation']
 		}
 	]
 };
