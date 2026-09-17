@@ -22,7 +22,7 @@ export const magician: SocialLink = {
 			rank: 2,
 			requirements: 'Automatically after you steal your first treasure.',
 			choices: [],
-			unlocks: ['Baton Pass']
+			unlocks: []
 		},
 		{
 			rank: 3,
@@ -70,7 +70,7 @@ export const magician: SocialLink = {
 			rank: 10,
 			requirements: 'Automatically on 11/23.',
 			choices: [],
-			unlocks: ['Second Awakening']
+			unlocks: ['Second Awakening (Mercurius)', 'Futsunushi fusion']
 		}
 	]
 };
