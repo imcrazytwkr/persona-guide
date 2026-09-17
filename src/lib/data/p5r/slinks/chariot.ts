@@ -23,11 +23,11 @@ export const chariot: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: "Maybe then I'll be able to help out a little more.",
+					prompt: "Plus, maybe then I'll be able to help out a little more.",
 					options: [
 						{ text: "I'm counting on you.", points: 3 },
 						{ text: 'You seem pretty excited.', points: 3 },
-						{ text: '...help with what?', points: 2 }
+						{ text: '...Help with what?', points: 2 }
 					]
 				},
 				{
@@ -38,7 +38,7 @@ export const chariot: SocialLink = {
 					]
 				},
 				{
-					prompt: "Phone (P5R): I should've kept up my running.",
+					prompt: "Ugh... I should've kept up my running.",
 					options: [
 						{ text: "You're already fast enough.", points: 2 },
 						{ text: 'Are your legs okay?', points: 2 },
@@ -46,14 +46,14 @@ export const chariot: SocialLink = {
 					]
 				}
 			],
-			unlocks: ['Baton Pass']
+			unlocks: ['Punk Talk']
 		},
 		{
 			rank: 3,
 			requirements: '',
 			choices: [
 				{
-					prompt: '.....',
+					prompt: '......',
 					options: [{ text: "Let's not fight.", points: 2 }]
 				},
 				{
@@ -64,7 +64,7 @@ export const chariot: SocialLink = {
 					]
 				},
 				{
-					prompt: 'Phone (P5R): I get pissed off so damn easily. I really gotta work on that.',
+					prompt: 'I get pissed off so damn easily. I really gotta work on that.',
 					options: [{ text: "I can't exactly blame you.", points: 2 }]
 				}
 			],
@@ -76,28 +76,29 @@ export const chariot: SocialLink = {
 			choices: [
 				{
 					prompt: "But for some reason it don't look like he's gettin' along with the others.",
-					options: [{ text: 'Are you worried about him?', points: 3 }]
+					options: [{ text: 'Are you worried about him?', points: 2 }]
 				},
 				{
-					prompt: "I don't want 'em endin' up like me.",
+					prompt:
+						"It's good they're keepin' their heads low now though. I don't want 'em endin' up like me.",
 					options: [
 						{ text: "But you're doing great.", points: 3 },
-						{ text: "It's not so bad.", points: 2 },
-						{ text: 'I know how you feel.', points: 3 }
+						{ text: 'I know how you feel.', points: 3 },
+						{ text: "It's not so bad.", points: 2 }
 					]
 				}
 			],
-			unlocks: ['Punk Talk', 'Ogikubo Ramen']
+			unlocks: ['Stealth Dash', 'Ogikubo']
 		},
 		{
 			rank: 5,
-			requirements: '',
+			requirements: 'Available starting 5/6.',
 			choices: [
 				{
 					prompt: 'Oh yeah! You bring your stuff?',
 					options: [
-						{ text: 'A towel?', points: 2 },
-						{ text: 'Protein powder?', points: 3 }
+						{ text: 'Protein powder?', points: 3 },
+						{ text: 'A towel?', points: 2 }
 					]
 				},
 				{
@@ -109,18 +110,19 @@ export const chariot: SocialLink = {
 				},
 				{
 					prompt:
-						"But I'm still worried 'bout their advisor, Yamauchi. He's basically like a mini Kamoshida.",
+						"But I'm still worried 'bout their advisor, Yamauchi. He's basically like a mini-Kamoshida.",
 					options: [
-						{ text: "So he's short?.", points: 2 },
-						{ text: "So he's an asshole?", points: 3 }
+						{ text: "So he's an asshole?", points: 3 },
+						{ text: "So he's short?", points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): I ain't too worried!",
+					prompt:
+						"But I mean, if anything happens, I know you got my back. So I ain't too worried!",
 					options: [{ text: "Don't worry. I gotcha.", points: 2 }]
 				}
 			],
-			unlocks: []
+			unlocks: ['Protein Lovers']
 		},
 		{
 			rank: 6,
@@ -129,27 +131,28 @@ export const chariot: SocialLink = {
 				{
 					prompt: 'You got any ideas?',
 					options: [
+						{ text: 'We can train at my place.', points: 3 },
 						{ text: "Let's stay here.", points: 2 },
-						{ text: 'How about Protein Lovers?', points: 2 },
-						{ text: 'We can train at my place.', points: 3 }
+						{ text: 'How about Protein Lovers?', points: 2 }
 					]
 				},
 				{
-					prompt: "That's a load of bull!",
+					prompt: "Huh? That's a load of bull!",
 					options: [
 						{ text: 'You guys should trust Nakaoka.', points: 3 },
-						{ text: 'There is no time for arguing.', points: 3 }
+						{ text: 'This is no time for arguing.', points: 3 }
 					]
 				},
 				{
-					prompt: "You get what I'm tryin' to say, yeah?",
+					prompt: "<Protagonist>... You get what I'm tryin' to say, yeah?",
 					options: [
 						{ text: 'Absolutely.', points: 3 },
 						{ text: 'More or less.', points: 3 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): He'll keep his mouth shut whether or not someone's punchin' him.",
+					prompt:
+						"And Nakaoka can get weirdly stubborn sometimes. He'll keep his mouth shut whether or not someone's punchin' him.",
 					options: [{ text: "So he should've punched back?", points: 2 }]
 				}
 			],
@@ -158,11 +161,11 @@ export const chariot: SocialLink = {
 		{
 			rank: 7,
 			requirements:
-				'Ryuji texts to initiate. Dates: 5/25, 6/22, 8/12, 9/21, 10/2, 11/2, 11/4, 11/11, 12/2, 12/7.',
+				'Ryuji texts in the evening to initiate. Dates: 5/18, 5/20, 5/25, 5/27, 6/22, 6/29, 7/1, 7/6, 7/29, 8/12, 8/17, 9/21, 10/2, 10/7, 11/2, 11/4, 11/9, 11/11, 11/16, 11/30, 12/2, 12/7, 12/9, 1/13.',
 			choices: [
 				{
 					prompt:
-						"If we don't do something quick, Yamauchi's gonna get rid of Takeishi too... God dammit!",
+						"If we don't do something quick, Yamauchi's gonna get rid of Takeishi too... Goddammit!",
 					options: [{ text: "Let's talk to Takeishi.", points: 3 }]
 				},
 				{
@@ -171,6 +174,10 @@ export const chariot: SocialLink = {
 						{ text: "I think it's cool, Ryuji.", points: 3 },
 						{ text: 'Wait, what?', points: 2 }
 					]
+				},
+				{
+					prompt: 'Besides... I doubt those guys are gonna listen to anything I say...',
+					options: [{ text: 'Never know until you try.', points: 2 }]
 				}
 			],
 			unlocks: ['Insta-kill']
@@ -187,7 +194,7 @@ export const chariot: SocialLink = {
 					]
 				},
 				{
-					prompt: 'Thanks.',
+					prompt: '...Thanks.',
 					options: [
 						{ text: 'All I did was watch.', points: 3 },
 						{ text: 'Are you gonna pay me back?', points: 2 }
@@ -196,13 +203,12 @@ export const chariot: SocialLink = {
 				{
 					prompt: "It's kinda like I was doin' a sprint... and you were runnin' next to me.",
 					options: [
-						{ text: 'But I was just standing here...', points: 2 },
-						{ text: "You weren't cool though.", points: 3 }
+						{ text: "You weren't cool though.", points: 3 },
+						{ text: 'But I was just standing here...', points: 2 }
 					]
 				},
 				{
-					prompt:
-						"Phone (P5R): Seein' them havin' a real heart-to-heart talk... They got a good team.",
+					prompt: "Seein' them havin' a real heart-to-heart talk... They got a good team.",
 					options: [{ text: 'So. Case closed?', points: 2 }]
 				}
 			],
@@ -220,11 +226,11 @@ export const chariot: SocialLink = {
 					]
 				},
 				{
-					prompt: 'They asked me to come back to the team.',
+					prompt: 'Oh, and uh... they asked me to come back to the team.',
 					options: [
+						{ text: "Don't do it.", points: 3 },
 						{ text: 'What did you say?', points: 2 },
-						{ text: 'Do you have any time for that?', points: 2 },
-						{ text: "Don't do it.", points: 3 }
+						{ text: 'Do you have any time for that?', points: 2 }
 					]
 				},
 				{
@@ -235,11 +241,12 @@ export const chariot: SocialLink = {
 					]
 				},
 				{
-					prompt: "I'm just glad I found it.",
+					prompt: "...I'm just glad I found it.",
 					options: [{ text: 'I agree.', points: 2 }]
 				},
 				{
-					prompt: 'Phone (P5R): Sounds like they got him under control.',
+					prompt:
+						"They're apparently keepin' Yamauchi as their advisor for now, but it's cool. Sounds like they got him under control.",
 					options: [
 						{ text: 'Congratulations.', points: 2 },
 						{ text: 'Better watch out for them.', points: 2 }
@@ -251,8 +258,16 @@ export const chariot: SocialLink = {
 		{
 			rank: 10,
 			requirements: '',
-			choices: [],
-			unlocks: ['Chi You fusion', 'Second Awakening (Seiten Taisei)']
+			choices: [
+				{
+					prompt: 'I think they might even go far in the meet.',
+					options: [
+						{ text: "I'm looking forward to it.", points: 3 },
+						{ text: "We can't lose either.", points: 3 }
+					]
+				}
+			],
+			unlocks: ['Second Awakening (Seiten Taisei)', 'Chi You fusion']
 		}
 	]
 };
