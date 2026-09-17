@@ -1,3 +1,6 @@
+format:
+    npm run format
+
 [env("BASE_PATH", "/persona-guide")]
 build:
     npm run build
