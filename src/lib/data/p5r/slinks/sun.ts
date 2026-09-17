@@ -20,7 +20,10 @@ export const sun: SocialLink = {
 				{
 					prompt:
 						"It's about my speech schedules from this point on. Would you be willing to stick around to hear it?",
-					options: [{ text: 'Let me write this down.', points: 3 }]
+					options: [
+						{ text: 'Let me write this down.', points: 3 },
+						{ text: 'Of course.', points: 1 }
+					]
 				}
 			],
 			unlocks: []
@@ -30,7 +33,8 @@ export const sun: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: 'Why do you want to become a politician?',
+					prompt:
+						'By the way, I forgot to ask you last time we spoke. Why do you want to become a politician?',
 					options: [{ text: 'I want to improve my speech.', points: 2 }]
 				},
 				{
@@ -45,7 +49,7 @@ export const sun: SocialLink = {
 					options: [{ text: 'That was helpful.', points: 2 }]
 				},
 				{
-					prompt: 'Phone (P5R): What do you think? Did you take anything useful from it?',
+					prompt: '...What do you think? Did you take anything useful from it?',
 					options: [
 						{ text: 'It was helpful.', points: 2 },
 						{ text: 'Somewhat.', points: 2 },
@@ -53,21 +57,21 @@ export const sun: SocialLink = {
 					]
 				}
 			],
-			unlocks: ['Diplomacy']
+			unlocks: ['Diplomacy', '+3 Charm']
 		},
 		{
 			rank: 3,
 			requirements: '',
 			choices: [
 				{
-					prompt: 'Tell me, what about Yoshida here drew you in?',
+					prompt: "<Protagonist>-kun, was it? Tell me, what about Yoshida here drew you in?",
 					options: [
 						{ text: 'His message.', points: 2 },
 						{ text: 'His speaking skills.', points: 2 }
 					]
 				},
 				{
-					prompt: 'Phone (P5R): I want you to use your experiences to forge your own conviction.',
+					prompt: 'That is why... I want you to use your experiences to forge your own conviction.',
 					options: [{ text: "You think I'll ever find it?", points: 2 }]
 				}
 			],
@@ -83,28 +87,29 @@ export const sun: SocialLink = {
 				},
 				{
 					prompt:
-						'Phone (P5R): Perhaps it seems too obvious, or too trite, but... I hope you remember to cherish that, too.',
+						'Perhaps it seems too obvious, or too trite, but... I hope you remember to cherish that, too.',
 					options: [
 						{ text: 'I will.', points: 2 },
 						{ text: "Can't forget your roots.", points: 2 }
 					]
 				}
 			],
-			unlocks: []
+			unlocks: ['+3 Charm']
 		},
 		{
 			rank: 5,
 			requirements: '',
 			choices: [
 				{
-					prompt: "Do you think I've regained my confidence?",
+					prompt:
+						"However, I've been distancing myself from that. Do you think I've regained my confidence?",
 					options: [
-						{ text: "That media doesn't matter.", points: 3 },
+						{ text: "The media doesn't matter.", points: 3 },
 						{ text: 'I think so.', points: 2 }
 					]
 				}
 			],
-			unlocks: ['Manipulation']
+			unlocks: ['Manipulation', '+3 Charm']
 		},
 		{
 			rank: 6,
@@ -119,7 +124,7 @@ export const sun: SocialLink = {
 					]
 				},
 				{
-					prompt: 'What would you do at a time like this?',
+					prompt: 'What would you do at a time like this, <protagonist>-kun?',
 					options: [
 						{ text: "I'd decline.", points: 3 },
 						{ text: "I'd leave it to chance.", points: 2 }
@@ -127,7 +132,7 @@ export const sun: SocialLink = {
 				},
 				{
 					prompt:
-						"Phone (P5R): The most crucial thing is that you don't lose sight of who you are.",
+						"You'll have your own major decisions to make, in time. The most crucial thing is that you don't lose sight of who you are.",
 					options: [
 						{ text: "I'll keep that in mind.", points: 2 },
 						{ text: 'You make quite a case.', points: 2 }
@@ -141,11 +146,11 @@ export const sun: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: "Could you talk some sense into him? You'll benefit as well.",
+					prompt: "...<Protagonist>-kun, could you talk some sense into him? You'll benefit as well.",
 					options: [{ text: 'You should decline.', points: 2 }]
 				}
 			],
-			unlocks: []
+			unlocks: ['+2 Charm']
 		},
 		{
 			rank: 8,
@@ -161,22 +166,21 @@ export const sun: SocialLink = {
 					options: [{ text: 'Stick to your beliefs.', points: 3 }]
 				},
 				{
-					prompt:
-						"Phone (P5R): That is why you must never forget what's truly important to you... You understand?",
+					prompt: "That is why you must never forget what's truly important to you... You understand?",
 					options: [
 						{ text: "I'll never forget that.", points: 2 },
 						{ text: "It's tougher than it seems.", points: 2 }
 					]
 				}
 			],
-			unlocks: ['Mind Control']
+			unlocks: ['Mind Control', '+3 Charm']
 		},
 		{
 			rank: 9,
 			requirements: '',
 			choices: [
 				{
-					prompt: "OK, I'm going to get started.",
+					prompt: "Okay, I'm going to get started.",
 					options: [
 						{ text: 'Do your best.', points: 3 },
 						{ text: "I'm getting nervous.", points: 2 }
@@ -192,8 +196,17 @@ export const sun: SocialLink = {
 		{
 			rank: 10,
 			requirements: '',
-			choices: [],
-			unlocks: ['Charismatic Speech', 'Asura fusion']
+			choices: [
+				{
+					prompt: "I didn't intend for any of this to happen though...",
+					options: [
+						{ text: 'Your true self was revealed.', points: 3 },
+						{ text: "Don't let your guard down.", points: 3 },
+						{ text: "You're going to be popular.", points: 2 }
+					]
+				}
+			],
+			unlocks: ['Asura fusion', 'Charismatic Speech', '+3 Charm']
 		}
 	]
 };
