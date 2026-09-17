@@ -29,21 +29,25 @@ export const justice: SocialLink = {
 					options: [{ text: 'You always seem so busy.', points: 2 }]
 				},
 				{
-					prompt: 'How will you handle this?',
+					prompt:
+						"Not bad. Everything's riding on your next shot, though. How will you handle this?",
 					options: [
 						{ text: 'Shoot very carefully.', points: 2 },
 						{ text: "I'll go for a power shot.", points: 2 }
 					]
 				},
 				{
-					prompt: "Frankly, I didn't expect you to see through it.",
+					prompt:
+						"I'm rather dextrous with my right hand. I can even use chopsticks with it. Frankly, I didn't expect you to see through it.",
 					options: [
 						{ text: 'I see a lot of things.', points: 3 },
-						{ text: "Maybe I'll be a detective.", points: 2 }
+						{ text: "Maybe I'll be a detective.", points: 2 },
+						{ text: 'No holding back next time.', points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): If you're so inclined, we could go out again sometime.",
+					prompt:
+						"I think you'd be an interesting influence on me. If you're so inclined, we could go out again sometime.",
 					options: [{ text: 'As rivals?', points: 2 }]
 				}
 			],
@@ -54,15 +58,14 @@ export const justice: SocialLink = {
 			requirements: '- Knowledge 3 (Scholarly)\n- Charm 3 (Suave)',
 			choices: [
 				{
-					prompt: "Looks like I've been spotted.",
+					prompt: "Uh-oh. Looks like I've been spotted.",
 					options: [
 						{ text: "Should've figured.", points: 3 },
 						{ text: 'Your life must be so hard.', points: 2 }
 					]
 				},
 				{
-					prompt:
-						"Phone (P5R): I saw first-hand what happens when I'm too careless with my words around you.",
+					prompt: "I saw firsthand what happens when I'm too careless with my words around you.",
 					options: [{ text: "Wasn't it fun?", points: 2 }]
 				}
 			],
@@ -73,7 +76,7 @@ export const justice: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: 'You get to hear some great performers here.',
+					prompt: "It's just a jazz club. You get to hear some great performers here.",
 					options: [
 						{ text: 'Now this is my kind of club.', points: 3 },
 						{ text: 'Do they have coffee?', points: 2 }
@@ -87,7 +90,7 @@ export const justice: SocialLink = {
 					]
 				},
 				{
-					prompt: 'How relaxing. I really do like coming here.',
+					prompt: 'Whew... How relaxing. I really do like coming here.',
 					options: [{ text: "It's a great place.", points: 2 }]
 				},
 				{
@@ -99,18 +102,19 @@ export const justice: SocialLink = {
 					]
 				},
 				{
-					prompt: "Phone (P5R): It's a euphoria like when I manage to solve a case.",
+					prompt:
+						"There's something about that strange, erratic synchronicity... It's a euphoria like when I manage to solve a case.",
 					options: [{ text: 'I kinda get it.', points: 2 }]
 				}
 			],
-			unlocks: ['Sleuthing Mastery']
+			unlocks: ['Sleuthing Mastery', 'Jazz Club in Kichijoji']
 		},
 		{
 			rank: 5,
 			requirements: '',
 			choices: [
 				{
-					prompt: 'What a realistic game.',
+					prompt: 'Phew! My fingers are going to be sore tomorrow. What a realistic game.',
 					options: [{ text: 'Are you used to gunplay?', points: 2 }]
 				},
 				{
@@ -121,7 +125,7 @@ export const justice: SocialLink = {
 					]
 				},
 				{
-					prompt: "Phone (P5R): I wish I'd played better.",
+					prompt: "Hopefully I didn't come off as too much of a novice. I wish I'd played better.",
 					options: [
 						{ text: 'You did fine.', points: 2 },
 						{ text: "You've still got a long way to go.", points: 2 },
@@ -133,7 +137,7 @@ export const justice: SocialLink = {
 		},
 		{
 			rank: 6,
-			requirements: 'Available from 9/3; triggers at Leblanc.',
+			requirements: 'Available starting 9/3.',
 			choices: [
 				{
 					prompt: "Ahh, this feels wonderful... It's been a while.",
@@ -143,11 +147,12 @@ export const justice: SocialLink = {
 					]
 				},
 				{
-					prompt: "Whenever she had to bring a man home, she'd send me off to the local bathhouse.",
+					prompt:
+						"My mother worked at a nightclub. Whenever she had to bring a man home, she'd send me off to the local bathhouse.",
 					options: [{ text: "...You've been through a lot.", points: 2 }]
 				},
 				{
-					prompt: 'I know the hot water can make people dizzy...',
+					prompt: 'Actually, are you all right? I know the hot water can make people dizzy...',
 					options: [
 						{ text: 'This is nothing.', points: 3 },
 						{ text: "I'll stay until you're ready.", points: 3 },
@@ -155,14 +160,15 @@ export const justice: SocialLink = {
 					]
 				},
 				{
-					prompt: 'I think I feel a little lightheaded.',
+					prompt: 'Oof... I think I feel a little lightheaded.',
 					options: [
 						{ text: 'Same.', points: 3 },
 						{ text: 'Guess I win.', points: 2 }
 					]
 				},
 				{
-					prompt: 'I wonder why I told you? Curious indeed.',
+					prompt:
+						"I've never told anyone else about my family situation, either. I wonder why I told you? Curious indeed.",
 					options: [
 						{ text: 'Because we get along.', points: 2 },
 						{ text: "Because we're similar.", points: 2 }
@@ -177,91 +183,66 @@ export const justice: SocialLink = {
 				},
 				{
 					prompt:
-						"Phone (P5R): If they saw how I was acting today, perhaps they'd say I wasn't acting like the Detective Prince.",
+						"If they saw how I was acting today, perhaps they'd say I wasn't acting like the Detective Prince.",
 					options: [{ text: 'My bad, I guess.', points: 2 }]
 				}
 			],
-			unlocks: ['Baton Pass', 'Follow Up', 'Detective Talk']
+			unlocks: []
 		},
 		{
 			rank: 7,
 			requirements: '- Available from 11/2.\n- Knowledge 4 (Encyclopedic)',
 			choices: [
 				{
-					prompt: 'You have to be indirect, but precise, to land it in the pocket...',
-					options: [
-						{ text: "That's why it's so fun.", points: 3 },
-						{ text: "Yeah, it's convoluted...", points: 2 }
-					]
+					prompt:
+						"You can't simply strike the ball you're aiming for. You have to be indirect, but precise, to land it in the pocket...",
+					options: [{ text: "That's why it's so fun.", points: 3 }]
 				},
 				{
-					prompt: "I'm impressed that you beat me. You've become quite skilled.",
+					prompt:
+						"Even if it was with my self-imposed handicap, I'm impressed that you beat me. You've become quite skilled.",
 					options: [{ text: "I couldn't let myself lose.", points: 3 }]
 				},
 				{
-					prompt: '...the teammates you have now. How about it?',
-					options: [
-						{ text: "You're my rival.", points: 0 },
-						{ text: "I'll think about it.", points: 0 }
-					]
-				},
-				{
-					prompt: 'Phone (P5R):',
-					options: [{ text: "We're rivals, aren't we?", points: 0 }]
+					prompt: 'I have to ask—why do you get so competitive against me?',
+					options: [{ text: "We're rivals, aren't we?", points: 2 }]
 				}
 			],
-			unlocks: []
+			unlocks: ['Harisen Recovery']
 		},
 		{
 			rank: 8,
-			requirements:
-				'Must reach Rank 8 by 11/17 or ranks 9–10 and the true ending path lock out. Some scenes require Akechi at 1/3 HP or less.',
+			requirements: 'Must reach Rank 8 by 11/17 or ranks 9–10 and the true ending path lock out.',
 			choices: [
 				{
-					prompt: 'If we had fought to the end, do you see yourself winning?',
-					options: [{ text: "I definitely wouldn't lose.", points: 3 }]
-				},
-				{
-					prompt: "You're the one person I refuse to lose to.",
+					prompt:
+						'By the way, about that duel—if we had fought to the end, do you see yourself winning?',
 					options: [
-						{ text: "Really hate losing, don't you?", points: 2 },
-						{ text: 'Same here.', points: 1 }
+						{ text: "I definitely wouldn't lose.", points: 3 },
+						{ text: "I don't know.", points: 2 }
 					]
 				},
 				{
-					prompt: 'Should the opponent accept the glove, the duel is also accepted.',
-					options: [{ text: 'I accept.', points: 0 }]
-				},
-				{
-					prompt: 'After Cruiser Palace, before sleep:',
-					options: [{ text: 'I want to keep our promise.', points: 0 }]
+					prompt: "...You're the one person I refuse to lose to.",
+					options: [
+						{ text: "Really hate losing, don't you?", points: 3 },
+						{ text: 'Same here.', points: 1 }
+					]
 				}
 			],
 			unlocks: []
 		},
 		{
 			rank: 9,
-			requirements:
-				"Story rank after Rank 8 by 11/17. When assaulting Shido's Palace, tell Akechi you want to keep your promise.",
-			choices: [
-				{
-					prompt: "When preparing to assault Shido's Palace:",
-					options: [{ text: 'I want to keep our promise.', points: 0 }]
-				}
-			],
-			unlocks: ['Endure']
+			requirements: '',
+			choices: [],
+			unlocks: []
 		},
 		{
 			rank: 10,
-			requirements:
-				'Story rank. On 2/2, tell Akechi "We\'re stopping Maruki." Other choices lead to a bad ending.',
-			choices: [
-				{
-					prompt: 'When you meet on February 2nd:',
-					options: [{ text: "We're stopping Maruki.", points: 0 }]
-				}
-			],
-			unlocks: ['Protect', 'Metatron fusion', 'Second Awakening (Hereward)']
+			requirements: '',
+			choices: [],
+			unlocks: ['Second Awakening (Hereward)', 'Metatron fusion', 'Protect', 'Endure']
 		}
 	]
 };
