@@ -17,7 +17,7 @@ export const hierophant: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: "You know what I'm talking about, right?",
+					prompt: "Just keep doing what you can. And don't cause any trouble, right?",
 					options: [
 						{ text: 'Got it.', points: 3 },
 						{ text: 'That was our deal.', points: 2 },
@@ -45,8 +45,7 @@ export const hierophant: SocialLink = {
 					options: [{ text: 'I want the ladies to love me.', points: 2 }]
 				},
 				{
-					prompt:
-						"Phone (P5R): Seems like you're a quick study, so I hope you've got the hang of it.",
+					prompt: "Seems like you’re a quick study, so I hope you've got the hang of it.",
 					options: [{ text: 'Got it.', points: 2 }]
 				}
 			],
@@ -54,7 +53,7 @@ export const hierophant: SocialLink = {
 		},
 		{
 			rank: 3,
-			requirements: 'Brew coffee at Leblanc once, then spend time with Sojiro on a later night.',
+			requirements: 'Brew coffee at Leblanc at least once.',
 			choices: [
 				{
 					prompt: '...Are you listening to me? What grind are you supposed to use?',
@@ -66,8 +65,7 @@ export const hierophant: SocialLink = {
 					options: [{ text: 'Is it trouble?', points: 2 }]
 				},
 				{
-					prompt:
-						"Phone (P5R): But don't worry, I'll put you to work. We've got lots of time on our hands.",
+					prompt: "But don't worry, I'll put you to work. We’ve got lots of time on our hands.",
 					options: [
 						{ text: "I'm ready to work.", points: 2 },
 						{ text: 'Thank you in advance.', points: 2 }
@@ -82,15 +80,15 @@ export const hierophant: SocialLink = {
 			choices: [
 				{
 					prompt:
-						"That's because the acidity and the bean flavor profile all depend on the bean ratio. Pretty deep, huh?",
+						"That's because the acidity and the flavor profile all depend on the bean ratio. Pretty deep, huh?",
 					options: [{ text: 'Tell me more.', points: 3 }]
 				},
 				{
 					prompt: "It looks like Sojiro's in trouble. What should I do...?",
-					options: [{ text: "Call Sojiro's phone.", points: 3 }]
+					options: [{ text: "Call Sojiro's phone", points: 3 }]
 				},
 				{
-					prompt: 'Phone (P5R): Just let him do his thing, and get on with the job. Got it?',
+					prompt: 'Just let him do his thing, and get on with the job. Got it?',
 					options: [{ text: 'Understood.', points: 2 }]
 				}
 			],
@@ -98,8 +96,7 @@ export const hierophant: SocialLink = {
 		},
 		{
 			rank: 5,
-			requirements:
-				"Available after 8/22 (Futaba's Palace deadline). Hierophant is locked at Rank 4 until then.",
+			requirements: 'Available after 8/22.',
 			choices: [
 				{
 					prompt: 'And what about you?',
@@ -113,7 +110,7 @@ export const hierophant: SocialLink = {
 						'I thought my pick-up lines were the best in town, but not a single one worked on her... Heh...',
 					options: [
 						{ text: "She wasn't normal, huh?", points: 3 },
-						{ text: 'She was like Futaba?', points: 2 }
+						{ text: 'Was she like Futaba?', points: 2 }
 					]
 				},
 				{
@@ -122,11 +119,11 @@ export const hierophant: SocialLink = {
 					options: [{ text: 'It really paid off in the end.', points: 2 }]
 				},
 				{
-					prompt: "Phone (P5R): It's only a problem when she asks for it three times a day.",
+					prompt: "...It's only a problem when she asks for it three times a day.",
 					options: [{ text: 'She needs a balanced diet.', points: 2 }]
 				}
 			],
-			unlocks: ['+3 Kindness']
+			unlocks: ['+2 Kindness']
 		},
 		{
 			rank: 6,
@@ -149,8 +146,7 @@ export const hierophant: SocialLink = {
 					options: [{ text: 'Saving Futaba was no mistake.', points: 2 }]
 				},
 				{
-					prompt:
-						"Phone (P5R): Futaba's fast asleep... Didn't mean to get you tangled up in all this mess.",
+					prompt: "Futaba's fast asleep... Didn't mean to get you tangled up in all this mess.",
 					options: [{ text: 'If I can help somehow...', points: 2 }]
 				}
 			],
@@ -166,8 +162,7 @@ export const hierophant: SocialLink = {
 					options: [{ text: 'You might be right.', points: 2 }]
 				},
 				{
-					prompt:
-						"Phone (P5R): And that's only because you helped us connect, so... thanks for that.",
+					prompt: "And that's only because you helped us connect, so... thanks for that.",
 					options: [{ text: 'Feel like a real dad now?', points: 2 }]
 				}
 			],
@@ -185,25 +180,21 @@ export const hierophant: SocialLink = {
 					]
 				},
 				{
-					prompt: "What a pain in the ass. Don't you have enough problems already?",
+					prompt: "God damn... What a pain in the ass. Don't you have enough problems already?",
 					options: [{ text: 'I was just protecting Futaba.', points: 3 }]
 				}
 			],
-			unlocks: [
-				'Mementos request: The Money-Grubbing Uncle',
-				'Hierophant and Hermit (Futaba) locked until the request is complete'
-			]
+			unlocks: ['Mementos request: The Money-Grubbing Uncle']
 		},
 		{
 			rank: 9,
-			requirements:
-				'Complete Mementos request "The Money-Grubbing Uncle" (started by talking to Futaba).',
+			requirements: 'Complete Mementos request "The Money-Grubbing Uncle".',
 			choices: [
 				{
 					prompt: 'How is it... living with Sakura-san? Please, you can speak honestly.',
 					options: [
 						{ text: "It's great.", points: 3 },
-						{ text: "It's a bit of a nag.", points: 2 }
+						{ text: "He's a bit of a nag.", points: 2 }
 					]
 				},
 				{
@@ -214,11 +205,11 @@ export const hierophant: SocialLink = {
 					]
 				},
 				{
-					prompt: 'Phone (P5R): Getting all sentimental like this? At my age?',
+					prompt: "God, I'm a joke. Getting all sentimental like this? At my age?",
 					options: [
-						{ text: 'You did great.', points: 3 },
-						{ text: 'Futaba did great.', points: 3 },
-						{ text: 'You two were already family.', points: 3 }
+						{ text: 'You two were already family.', points: 3 },
+						{ text: 'You did great.', points: 2 },
+						{ text: 'Futaba did great.', points: 2 }
 					]
 				}
 			],
@@ -227,8 +218,16 @@ export const hierophant: SocialLink = {
 		{
 			rank: 10,
 			requirements: '',
-			choices: [],
-			unlocks: ['Curry Mastery', 'Kohryu fusion', 'Kanda Church (if not already unlocked)']
+			choices: [
+				{
+					prompt: 'Oh... I told her about you too.',
+					options: [
+						{ text: 'Good for you.', points: 3 },
+						{ text: 'Thank you.', points: 3 }
+					]
+				}
+			],
+			unlocks: ['Kohryu fusion', 'Curry Mastery', 'Kanda Church (if not already unlocked)']
 		}
 	]
 };
