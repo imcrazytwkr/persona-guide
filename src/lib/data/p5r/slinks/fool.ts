@@ -70,7 +70,7 @@ export const fool: SocialLink = {
 			rank: 10,
 			requirements: 'Automatically on 12/24.',
 			choices: [],
-			unlocks: ['Max Arcana Burst']
+			unlocks: ['Vishnu fusion', 'Max Arcana Burst']
 		}
 	]
 };
