@@ -22,12 +22,12 @@ export const emperor: SocialLink = {
 						'I have to hold up my end of the deal, so I’ll perform to the best of my ability. You need only ask.',
 					options: [
 						{ text: "I'll be asking a lot.", points: 3 },
-						{ text: "I'll try not to.", points: 2 },
-						{ text: 'Thanks.', points: 2 }
+						{ text: 'Thanks.', points: 2 },
+						{ text: "I'll try not to.", points: 2 }
 					]
 				}
 			],
-			unlocks: ['Novice Duplication', 'Recarm skill card']
+			unlocks: ['Card Duplication', 'Recarm Skill Card']
 		},
 		{
 			rank: 2,
@@ -50,11 +50,11 @@ export const emperor: SocialLink = {
 				},
 				{
 					prompt:
-						"Phone (P5R): I'm on a roll right now. I shall keep up this momentum and apply it to the Phantom Thieves as well!",
+						"I'm on a roll right now. I shall keep up this momentum and apply it to the Phantom Thieves as well!",
 					options: [{ text: "You're already doing enough.", points: 2 }]
 				}
 			],
-			unlocks: ['Baton Pass']
+			unlocks: []
 		},
 		{
 			rank: 3,
@@ -65,8 +65,7 @@ export const emperor: SocialLink = {
 					options: [{ text: "Don't let it bother you.", points: 2 }]
 				},
 				{
-					prompt:
-						'What is going to happen to me now...? Without art, what will remain of my being...?',
+					prompt: 'What is going to happen to me now? Without art, what will remain of my being!?',
 					options: [
 						{ text: "This isn't like you.", points: 3 },
 						{ text: "You're really giving up?", points: 2 }
@@ -74,14 +73,15 @@ export const emperor: SocialLink = {
 				},
 				{
 					prompt:
-						'But that is all the more reason I must break out of my slump. I must prove my ability to him.',
+						'But that is all the more reason I must break out of my slump. I must prove my ability to him...!',
 					options: [
 						{ text: 'How exactly?', points: 2 },
 						{ text: "That's the spirit.", points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): I'm going to have ten pieces finished up by end of today!",
+					prompt:
+						"I will simply keep on drawing. I'm going to have ten pieces finished up by end of today!",
 					options: [{ text: "That's the spirit.", points: 2 }]
 				}
 			],
@@ -108,25 +108,25 @@ export const emperor: SocialLink = {
 				},
 				{
 					prompt:
-						'Phone (P5R): Even if I ever do understand it, will I truly be able to draw it...?',
+						'When will I fully understand the heart? Even if I ever do understand it, will I truly be able to draw it...?',
 					options: [{ text: "Don't get discouraged.", points: 2 }]
 				}
 			],
-			unlocks: ['Artist Talk', 'Inokashira Park (if not already unlocked)']
+			unlocks: ['Art Talk', 'Inokashira Park (if not already unlocked)']
 		},
 		{
 			rank: 5,
 			requirements: '',
 			choices: [
 				{
-					prompt: 'You will have to be my model today.',
+					prompt: 'Very well. <Protagonist>, you will have to be my model today.',
 					options: [
 						{ text: 'Do you want me to strip?', points: 3 },
 						{ text: 'I dunno if I can do it...', points: 2 }
 					]
 				},
 				{
-					prompt: 'Do you think I will be able to capture the truth someday?',
+					prompt: '<Protagonist>... Do you think I will be able to capture the truth someday?',
 					options: [
 						{ text: "I'm sure you will.", points: 3 },
 						{ text: "It doesn't look like it.", points: 3 },
@@ -135,30 +135,30 @@ export const emperor: SocialLink = {
 				},
 				{
 					prompt:
-						'Phone (P5R): The further I seem to be from understanding the abyss of the heart.',
+						'The more I think about it... the further I seem to be from understanding the abyss of the heart.',
 					options: [{ text: "There's still hope.", points: 2 }]
 				}
 			],
-			unlocks: ['Adept Duplication', 'Kanda Church (if not already unlocked)']
+			unlocks: ['Card Creation', 'Kanda Church (if not already unlocked)']
 		},
 		{
 			rank: 6,
 			requirements: 'Proficiency 4 (Masterful)',
 			choices: [
 				{
-					prompt: 'This place has not changed in the slightest...',
+					prompt: 'Hm, this place has not changed in the slightest...',
 					options: [{ text: 'It feels nostalgic.', points: 2 }]
 				},
 				{
-					prompt: 'Why do you think Madarame decided to take me in?',
+					prompt: '...<Protagonist>, why do you think Madarame decided to take me in?',
 					options: [
 						{ text: 'Maybe he was sympathetic.', points: 3 },
 						{ text: "I couldn't possibly tell you.", points: 3 },
-						{ text: 'He somehow knew you have skill.', points: 2 }
+						{ text: 'He somehow knew you had skill.', points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): What's your impression of him?",
+					prompt: "By the way, that gentleman... Kawanabe, was it? What's your impression of him?",
 					options: [{ text: 'He had a certain dignity.', points: 2 }]
 				}
 			],
@@ -169,7 +169,8 @@ export const emperor: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: "We'll sell you as the 'tragic, handsome artist.'",
+					prompt:
+						"There is definitely a market for you. We'll sell you as the 'tragic, handsome artist.'",
 					options: [{ text: 'What do you mean?', points: 2 }]
 				},
 				{
@@ -178,26 +179,26 @@ export const emperor: SocialLink = {
 					options: [{ text: 'The truth is within you.', points: 3 }]
 				},
 				{
-					prompt: "Phone (P5R): I'm a petty sellout, a slave to the power of money!",
+					prompt: "I'm tainted after all...! I'm a petty sellout, a slave to the power of money!",
 					options: [
 						{ text: 'Calm down.', points: 2 },
 						{ text: "It's not a crime to enjoy sushi.", points: 2 }
 					]
 				}
 			],
-			unlocks: ['Master Duplication']
+			unlocks: ['Live Painting']
 		},
 		{
 			rank: 8,
 			requirements: '',
 			choices: [
 				{
-					prompt: 'What subject do you think would most capture beauty?',
+					prompt: '<Protagonist>, what subject do you think would most capture beauty?',
 					options: [{ text: 'It has to be Ann.', points: 2 }]
 				},
 				{
 					prompt:
-						'Is this what pure passion is supposed to look like!? My heart is clouded by worldly desires...!',
+						'Is this what pure passion is supposed to look like!? My heart is clouded by worldly desires!',
 					options: [
 						{ text: "You've really grown, Yusuke.", points: 3 },
 						{ text: "What's wrong with that?", points: 2 }
@@ -233,8 +234,16 @@ export const emperor: SocialLink = {
 		{
 			rank: 10,
 			requirements: '',
-			choices: [],
-			unlocks: ['Odin fusion', 'Second Awakening (Kamu Susano-o)']
+			choices: [
+				{
+					prompt: 'Sensei...',
+					options: [
+						{ text: 'He was a good man deep down.', points: 3 },
+						{ text: 'That was another aspect of him.', points: 3 }
+					]
+				}
+			],
+			unlocks: ['Second Awakening (Kamu Susano-o)', 'Odin fusion']
 		}
 	]
 };
