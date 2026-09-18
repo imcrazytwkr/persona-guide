@@ -9,7 +9,7 @@ export const sun: SocialLink = {
 	name: 'Toranosuke Yoshida',
 	location: 'Shibuya Station Square',
 	unlock:
-		'From 5/6, listen to Yoshida at Station Square, then apply at the nearby Beef Bowl Shop via station leaflets. Work there twice to start the confidant.',
+		'From 5/6, listen to Yoshida at Station Square, then apply at the nearby Beef Bowl Shop via station leaflets. Work there twice to start the social link.',
 	availability: 'Sunday nights. Unavailable after November 13.',
 	ranks: [
 		{

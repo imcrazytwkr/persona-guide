@@ -11,7 +11,7 @@ export const hanged: SocialLink = {
 	unlock:
 		"- After 5/6, see the airsoft shop event with the 'package' you have to hold.\n- Guts 4 (Dauntless)",
 	availability:
-		'Thursday, Saturday, and Sunday nights, and rainy days. Shop is open in the daytime but the confidant only advances at night.',
+		'Thursday, Saturday, and Sunday nights, and rainy days. Shop is open in the daytime but the social link only advances at night.',
 	ranks: [
 		{
 			rank: 1,

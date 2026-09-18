@@ -81,7 +81,7 @@ export const faith: SocialLink = {
 		},
 		{
 			rank: 4,
-			requirements: 'Must complete Rank 4 before 12/22 to continue the confidant.',
+			requirements: 'Must complete Rank 4 before 12/22 to continue the social link.',
 			choices: [
 				{
 					prompt:

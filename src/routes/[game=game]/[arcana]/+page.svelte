@@ -65,5 +65,5 @@
 		{/each}
 	</div>
 {:else}
-	<p>Unknown confidant.</p>
+	<p>Unknown social link.</p>
 {/if}

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ConfidantCard from '$lib/components/ConfidantCard.svelte';
+	import SocialLinkCard from '$lib/components/SocialLinkCard.svelte';
 	import type { PageProps } from './$types';
 
 	const { data }: PageProps = $props();
@@ -10,7 +10,7 @@
 	{#if data.socialLinks.length > 0}
 		<ul class="grid grid-cols-1 gap-3 sm:grid-cols-2">
 			{#each data.socialLinks as link (link.arcana)}
-				<li><ConfidantCard {link} /></li>
+				<li><SocialLinkCard {link} /></li>
 			{/each}
 		</ul>
 	{/if}
