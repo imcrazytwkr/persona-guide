@@ -21,7 +21,7 @@ export class RankState {
 		this.gameId = gameId;
 	}
 
-	getKey(arcana: string): string {
+	private getKey(arcana: string): string {
 		return `${this.gameId}:${arcana}:rank`;
 	}
 

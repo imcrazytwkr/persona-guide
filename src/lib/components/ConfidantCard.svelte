@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { getRankState } from '$lib/state/rank';
+
+	import { getRankState, MAX_RANK } from '$lib/state/rank';
 	import type { SocialLink } from '$lib/types';
 
 	let { link }: { link: SocialLink } = $props();
@@ -16,7 +17,7 @@
 			<p class="text-sm opacity-70">{link.arcana.label}</p>
 			<h2 class="text-lg font-bold">{link.name}</h2>
 		</div>
-		{#if current < 10}
+		{#if current < MAX_RANK}
 			<span class="chip preset-filled-primary-500">Rank {current}</span>
 		{:else}
 			<span class="chip preset-filled-success-500">Max</span>
