@@ -10,7 +10,7 @@ export const councillor: SocialLink = {
 	location: 'Shujin Academy',
 	unlock: 'Unmissable event on 5/13.',
 	availability:
-		'Monday, Tuesday, Wednesday, and Friday daytimes. Unlocked 5/13. Cannot pass Rank 5 until after 9/19. Must reach Rank 9 by 11/17 for Rank 10.',
+		'Monday, Tuesday, Wednesday, and Friday daytime. Unlocked 5/13. Cannot pass Rank 5 until after 9/19. Must reach Rank 9 by 11/17 for Rank 10.',
 	ranks: [
 		{
 			rank: 1,

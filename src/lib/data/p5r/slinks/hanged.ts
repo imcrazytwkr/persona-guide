@@ -158,7 +158,7 @@ export const hanged: SocialLink = {
 		{
 			rank: 8,
 			requirements:
-				'- Guts 5 (Lionhearted)\n- After the first scenes, complete Mementos request "Shady Deal in the Shadows", then return to Iwai.',
+				'- Guts 5 (Lionhearted)\n- After the first scene, complete Mementos request "Shady Deal in the Shadows", then return to Iwai.',
 			choices: [
 				{
 					prompt: "I hope dealing with all this yakuza business hasn't been too much trouble.",

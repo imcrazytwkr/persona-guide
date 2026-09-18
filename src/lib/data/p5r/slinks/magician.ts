@@ -7,7 +7,7 @@ export const magician: SocialLink = {
 		value: 'magician'
 	},
 	name: 'Morgana',
-	location: 'Café Leblanc',
+	location: 'Leblanc',
 	unlock: 'Automatically on 4/15.',
 	availability: 'Ranks up automatically with story events. No hangouts.',
 	ranks: [

@@ -7,7 +7,7 @@ export const hierophant: SocialLink = {
 		value: 'hierophant'
 	},
 	name: 'Sojiro Sakura',
-	location: 'Café Leblanc',
+	location: 'Leblanc',
 	unlock: 'Unlocks as the story progresses; hang out with Sojiro at Leblanc at night.',
 	availability: 'Nighttime every day except Wednesday. Day and night on rainy days.',
 	ranks: [
@@ -226,7 +226,7 @@ export const hierophant: SocialLink = {
 					]
 				}
 			],
-			unlocks: ['Kohryu fusion', 'Curry Mastery', 'Kanda Church (if not already unlocked)']
+			unlocks: ['Kohryu fusion', 'Curry Mastery', 'Kanda Church']
 		}
 	]
 };

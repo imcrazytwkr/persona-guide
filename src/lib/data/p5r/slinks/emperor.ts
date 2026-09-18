@@ -8,7 +8,7 @@ export const emperor: SocialLink = {
 	},
 	name: 'Yusuke Kitagawa',
 	location: 'Shibuya Station Underground Walkway',
-	unlock: 'Unmissable event on 6/18. Talk to Yusuke at the underground passageway afterwards.',
+	unlock: 'Unmissable event on 6/18. Talk to Yusuke at the underground passageway afterward.',
 	availability:
 		'Daytime every day; day and night on rainy days. Unavailable during some story events.',
 	ranks: [
@@ -84,7 +84,7 @@ export const emperor: SocialLink = {
 					options: [{ text: "That's the spirit.", points: 2 }]
 				}
 			],
-			unlocks: ['Follow Up', 'Ueno Museum (if not already unlocked)']
+			unlocks: ['Follow Up', 'Ueno Museum']
 		},
 		{
 			rank: 4,
@@ -111,7 +111,7 @@ export const emperor: SocialLink = {
 					options: [{ text: "Don't get discouraged.", points: 2 }]
 				}
 			],
-			unlocks: ['Art Talk', 'Inokashira Park (if not already unlocked)']
+			unlocks: ['Art Talk', 'Inokashira Park']
 		},
 		{
 			rank: 5,
@@ -138,7 +138,7 @@ export const emperor: SocialLink = {
 					options: [{ text: "There's still hope.", points: 2 }]
 				}
 			],
-			unlocks: ['Card Creation', 'Kanda Church (if not already unlocked)']
+			unlocks: ['Card Creation', 'Kanda Church']
 		},
 		{
 			rank: 6,

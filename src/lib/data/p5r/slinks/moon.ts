@@ -153,7 +153,7 @@ export const moon: SocialLink = {
 					options: [{ text: 'Absolutely. Nice job.', points: 2 }]
 				}
 			],
-			unlocks: ['Inokashira Park (if not already unlocked)']
+			unlocks: ['Inokashira Park']
 		},
 		{
 			rank: 7,
