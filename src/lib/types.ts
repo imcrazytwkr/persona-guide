@@ -1,13 +1,24 @@
 export type GameId = 'p5r';
 
+export type RouteId = string;
+
+export type GameRoute = {
+	id: RouteId;
+	label: string;
+};
+
+export type GameMeta = {};
+
 export type DialogueOption = {
 	text: string;
 	points: number;
+	routeFlag?: RouteId;
 };
 
 export type DialogueChoice = {
 	prompt: string;
 	options: DialogueOption[];
+	route?: RouteId;
 };
 
 export type Rank = {
@@ -39,5 +50,7 @@ export type Game = {
 };
 
 export type GameData = Game & {
+	routes: GameRoute[];
+	defaultRoute: RouteId;
 	socialLinks: SocialLink[];
 };

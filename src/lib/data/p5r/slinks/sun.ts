@@ -64,7 +64,7 @@ export const sun: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: "<Protagonist>-kun, was it? Tell me, what about Yoshida here drew you in?",
+					prompt: '<Protagonist>-kun, was it? Tell me, what about Yoshida here drew you in?',
 					options: [
 						{ text: 'His message.', points: 2 },
 						{ text: 'His speaking skills.', points: 2 }
@@ -146,7 +146,8 @@ export const sun: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: "...<Protagonist>-kun, could you talk some sense into him? You'll benefit as well.",
+					prompt:
+						"...<Protagonist>-kun, could you talk some sense into him? You'll benefit as well.",
 					options: [{ text: 'You should decline.', points: 2 }]
 				}
 			],
@@ -166,7 +167,8 @@ export const sun: SocialLink = {
 					options: [{ text: 'Stick to your beliefs.', points: 3 }]
 				},
 				{
-					prompt: "That is why you must never forget what's truly important to you... You understand?",
+					prompt:
+						"That is why you must never forget what's truly important to you... You understand?",
 					options: [
 						{ text: "I'll never forget that.", points: 2 },
 						{ text: "It's tougher than it seems.", points: 2 }

@@ -1,20 +1,22 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { page } from '$app/state';
-	import { getLinks } from '$lib/data/p5r';
-	import { isGameId } from '$lib/games';
-	import { getRank } from '$lib/progress.svelte';
-	import type { GameId } from '$lib/types';
+	import { getRankState } from '$lib/state/rank';
+	import type { GameId, SocialLink } from '$lib/types';
 	import { AppBar, Navigation } from '@skeletonlabs/skeleton-svelte';
 
-	let open = $state(false);
+	let {
+		game,
+		links,
+		arcana
+	}: {
+		game: GameId;
+		links: SocialLink[];
+		arcana?: string;
+	} = $props();
 
-	const game = $derived.by((): GameId => {
-		const id = page.params.game;
-		return id && isGameId(id) ? id : 'p5r';
-	});
-	const links = $derived(getLinks(game));
-	const arcana = $derived(page.params.arcana);
+	const ranks = getRankState();
+
+	let open = $state(false);
 
 	function close() {
 		open = false;
@@ -29,9 +31,9 @@
 			<button
 				type="button"
 				class="btn-icon preset-tonal-surface btn-icon-lg"
-				aria-label="Open confidant menu"
+				aria-label="Open social link menu"
 				aria-expanded={open}
-				aria-controls="confidant-nav"
+				aria-controls="social-link-nav"
 				onclick={() => (open = true)}
 			>
 				<svg
@@ -45,7 +47,7 @@
 			</button>
 		</AppBar.Lead>
 		<AppBar.Headline>
-			<p class="text-lg font-bold">Confidant Guide</p>
+			<p class="text-lg font-bold">Social Link Guide</p>
 		</AppBar.Headline>
 		<AppBar.Trail class="grow"></AppBar.Trail>
 	</AppBar.Toolbar>
@@ -58,11 +60,11 @@
 		aria-label="Close menu"
 		onclick={close}
 	></button>
-	<Navigation id="confidant-nav" layout="sidebar" class="fixed z-50 flex h-full flex-col">
+	<Navigation id="social-link-nav" layout="sidebar" class="fixed z-50 flex h-full flex-col">
 		<Navigation.Header
 			class="flex items-center justify-between gap-2 border-b border-surface-200-800 p-3"
 		>
-			<p class="text-lg font-bold">Confidants</p>
+			<p class="text-lg font-bold">Social Links</p>
 			<button
 				type="button"
 				class="btn-icon preset-tonal-surface"
@@ -80,7 +82,7 @@
 					aria-current={arcana ? undefined : 'page'}
 					onclick={close}
 				>
-					<Navigation.TriggerText>All confidants</Navigation.TriggerText>
+					<Navigation.TriggerText>All social links</Navigation.TriggerText>
 				</Navigation.TriggerAnchor>
 				{#each links as link (link.arcana.value)}
 					<Navigation.TriggerAnchor
@@ -95,7 +97,7 @@
 							{link.arcana.label}
 						</Navigation.TriggerText>
 						<span class="chip preset-filled-surface-200-800">
-							{getRank(game, link.arcana.value)}
+							{ranks.getRank(link.arcana.value)}
 						</span>
 					</Navigation.TriggerAnchor>
 				{/each}

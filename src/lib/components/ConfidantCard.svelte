@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { getRank } from '$lib/progress.svelte';
+	import { getRankState } from '$lib/state/rank';
 	import type { SocialLink } from '$lib/types';
 
 	let { link }: { link: SocialLink } = $props();
 
-	const current = $derived(getRank(link.game, link.arcana.value));
+	const ranks = getRankState();
+	const current = $derived(ranks.getRank(link.arcana.value));
 	const href = $derived(resolve(`/${link.game}/${link.arcana.value}`));
 </script>
 

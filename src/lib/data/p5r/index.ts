@@ -1,4 +1,4 @@
-import type { GameData, GameId, SocialLink } from '$lib/types';
+import type { GameData, GameId, GameMeta, GameRoute, SocialLink } from '$lib/types';
 
 import {
 	fool,
@@ -30,6 +30,15 @@ export const id: GameId = 'p5r';
 
 export const title = 'Persona 5 Royal';
 
+const routes: GameRoute[] = [
+	{ id: 'friendship', label: 'Friendship' },
+	{ id: 'romance', label: 'Romance' }
+];
+
+const defaultRoute = 'friendship';
+
+export const meta: GameMeta = { routes, defaultRoute };
+
 export const socialLinks: SocialLink[] = [
 	fool,
 	magician,
@@ -56,16 +65,7 @@ export const socialLinks: SocialLink[] = [
 	councillor
 ];
 
-export const gameData = Object.freeze<GameData>({ id, title, socialLinks });
-
-export function getLinks(game: GameId): SocialLink[] {
-	if (game === 'p5r') return socialLinks;
-	return [];
-}
-
-export function getLink(game: GameId, arcana: string): SocialLink | undefined {
-	return getLinks(game).find((link) => link.arcana.value === arcana);
-}
+export const gameData = Object.freeze<GameData>({ id, title, routes, defaultRoute, socialLinks });
 
 export function arcanaLabel(arcana: string): string {
 	if (arcana === 'hanged') return 'Hanged Man';

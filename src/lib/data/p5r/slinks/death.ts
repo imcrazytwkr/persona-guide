@@ -212,19 +212,21 @@ export const death: SocialLink = {
 				{
 					prompt: "Why don't you tell me the truth about why you kept coming to me?",
 					options: [
-						{ text: 'I wanted to see you. (Romance route)', points: 0 },
-						{ text: 'It was for my exams. (Platonic route)', points: 0 }
+						{ text: 'I wanted to see you.', points: 0, routeFlag: 'romance' },
+						{ text: 'It was for my exams.', points: 0, routeFlag: 'friendship' }
 					]
 				},
 				{
-					prompt: "...Don't tell me you're in love with me or something. (Romance)",
+					prompt: "...Don't tell me you're in love with me or something.",
+					route: 'romance',
 					options: [
 						{ text: 'I love you.', points: 2 },
 						{ text: 'What do you think?', points: 0 }
 					]
 				},
 				{
-					prompt: "Or... I can give you a 'special examination' if you'd like. (Romance)",
+					prompt: "Or... I can give you a 'special examination' if you'd like.",
+					route: 'romance',
 					options: [
 						{ text: "It isn't a joke.", points: 3 },
 						{ text: 'That sounds good.', points: 0 }
@@ -232,7 +234,8 @@ export const death: SocialLink = {
 				},
 				{
 					prompt:
-						"Turns out my little guinea pig caught an illness that's even more annoying and persistent than Crawford-Ende's. (Romance)",
+						"Turns out my little guinea pig caught an illness that's even more annoying and persistent than Crawford-Ende's.",
+					route: 'romance',
 					options: [
 						{ text: 'So did you.', points: 2 },
 						{ text: "It's true love.", points: 0 },
@@ -240,7 +243,8 @@ export const death: SocialLink = {
 					]
 				},
 				{
-					prompt: "You really are the best guinea pig I could've hoped for. (Platonic)",
+					prompt: "You really are the best guinea pig I could've hoped for.",
+					route: 'friendship',
 					options: [
 						{ text: "I'm glad we saw it through.", points: 2 },
 						{ text: "You're welcome.", points: 0 },
@@ -260,7 +264,8 @@ export const death: SocialLink = {
 					options: [{ text: 'I wonder...', points: 2 }]
 				},
 				{
-					prompt: "Really... Then, would you like a 'thorough examination'? (Romance)",
+					prompt: "Really... Then, would you like a 'thorough examination'?",
+					route: 'romance',
 					options: [
 						{ text: 'Yes, please.', points: 3 },
 						{ text: 'What kind?', points: 2 }

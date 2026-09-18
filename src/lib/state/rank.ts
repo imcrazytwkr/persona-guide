@@ -1,15 +1,23 @@
 import { SvelteMap } from 'svelte/reactivity';
-import type { GameId } from '../../types';
+import { createContext } from 'svelte';
+
+import type { GameId } from '../types';
+
+const [getState, setState] = createContext<RankState>();
+export const getRankState = getState;
+export const setRankState = setState;
 
 export const MIN_RANK = 0;
 export const MAX_RANK = 10;
 
 export class RankState {
 	private state: SvelteMap<string, number>;
+	private parsed: Record<string, number>;
 	private gameId: string;
 
 	constructor(gameId: GameId) {
 		this.state = new SvelteMap();
+		this.parsed = Object.create(null);
 		this.gameId = gameId;
 	}
 
@@ -18,26 +26,19 @@ export class RankState {
 	}
 
 	getRank(arcana: string): number {
-		if (this.state.has(arcana)) {
-			return this.state.get(arcana) ?? 0;
+		const live = this.state.get(arcana);
+		if (typeof live === 'number') {
+			return live;
 		}
 
-		const key = this.getKey(arcana);
-
-		const raw = localStorage.getItem(key);
-		if (typeof raw !== 'string' || !raw) {
-			return 0;
+		let parsed = this.parsed[arcana];
+		if (typeof parsed === 'number') {
+			return parsed;
 		}
 
-		const rank = parseInt(raw, 10);
-		if (!isValidRank(rank)) {
-			localStorage.removeItem(key);
-			return 0;
-		}
-
-		// Backfilling reactive state
-		this.state.set(arcana, rank);
-		return rank;
+		parsed = this.readStorage(arcana);
+		this.parsed[arcana] = parsed;
+		return parsed;
 	}
 
 	setRank(arcana: string, rank: number): void {
@@ -45,13 +46,9 @@ export class RankState {
 			throw new RangeError(`Invalid rank value: ${rank}`);
 		}
 
-		if (rank === 0) {
-			this.state.delete(arcana);
-			localStorage.removeItem(this.getKey(arcana));
-			return;
-		}
-
 		this.state.set(arcana, rank);
+		delete this.parsed[arcana];
+
 		localStorage.setItem(this.getKey(arcana), `${rank}`);
 	}
 
@@ -68,6 +65,22 @@ export class RankState {
 
 		this.setRank(arcana, result);
 		return result;
+	}
+
+	private readStorage(arcana: string): number {
+		const key = this.getKey(arcana);
+		const raw = localStorage.getItem(key);
+		if (typeof raw !== 'string' || !raw) {
+			return 0;
+		}
+
+		const rank = parseInt(raw, 10);
+		if (!isValidRank(rank)) {
+			localStorage.setItem(key, '0');
+			return 0;
+		}
+
+		return rank;
 	}
 }
 

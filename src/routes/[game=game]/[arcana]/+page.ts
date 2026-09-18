@@ -1,11 +1,13 @@
-import { dataIndex } from '$lib/data';
-
+import { localStorageKey, routeGetter } from './store';
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = ({ params }) => {
-	// @NOTE: cannot use `parent()` because it only gets layout data and not
-	// page data
-	const { socialLinks, ...game } = dataIndex[params.game];
+export const load: PageLoad = async ({ params, parent, depends }) => {
+	depends(localStorageKey(params.game, params.arcana));
+
+	const { routes, socialLinks } = await parent();
+	const getRoute = routeGetter(routes);
+
 	const link = socialLinks.find((l) => l.arcana.value === params.arcana);
-	return { game, link };
+	const activeRoute = getRoute(link);
+	return { link, activeRoute };
 };
