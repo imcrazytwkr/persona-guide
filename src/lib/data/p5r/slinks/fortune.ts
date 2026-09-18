@@ -9,7 +9,7 @@ export const fortune: SocialLink = {
 	name: 'Chihaya Mifune',
 	location: 'Shinjuku (fortune-telling stall), nighttime, not raining',
 	unlock:
-		'From 6/22: get a prediction, buy the Holy Stone for ¥100,000, return about the stone, complete Mementos request "Ending the Boyfriend\'s Abuse", then see Chihaya again.',
+		'From 6/22: get a prediction, buy the Holy Stone for 100,000 yen, return about the stone, complete Mementos request "Ending the Boyfriend\'s Abuse", then see Chihaya again.',
 	availability: 'Tuesday, Thursday, Saturday, and Sunday nights. Not available when raining.',
 	ranks: [
 		{
@@ -32,20 +32,12 @@ export const fortune: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt:
-						'What can we do to help this woman who is so oppressed by the savagery of a male-dominated work environment?',
-					options: [{ text: 'Encourage her.', points: 0 }]
-				},
-				{
-					prompt: 'Incidentally, what would you say if you wanted to encourage her?',
-					options: [{ text: 'Overturn your fate.', points: 0 }]
-				},
-				{
 					prompt: 'Fate cannot be changed. Fate is absolute... That is how it must be.',
 					options: [{ text: 'Open your mind to change.', points: 2 }]
 				},
 				{
-					prompt: "Phone (P5R): You're currently standing right in front of your house, correct!?",
+					prompt:
+						"So I'm going to get right to my question! You're currently standing right in front of your house, correct!?",
 					options: [{ text: 'Of course I am.', points: 2 }]
 				}
 			],
@@ -54,16 +46,7 @@ export const fortune: SocialLink = {
 		{
 			rank: 3,
 			requirements: '',
-			choices: [
-				{
-					prompt: 'How should he move forward?',
-					options: [{ text: 'Follow his heart.', points: 0 }]
-				},
-				{
-					prompt: 'What would you say to make him choose his childhood friend...?',
-					options: [{ text: 'Thieves may steal her away.', points: 0 }]
-				}
-			],
+			choices: [],
 			unlocks: ['Money Reading']
 		},
 		{
@@ -71,15 +54,14 @@ export const fortune: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: 'How can I become one of those people, Joker-san?',
+					prompt: 'How can I become one of those people, <protagonist>-san?',
 					options: [
 						{ text: 'Trust in yourself.', points: 3 },
 						{ text: 'Strengthen your will.', points: 2 }
 					]
 				},
 				{
-					prompt:
-						'Phone (P5R): Talking to you about everything is helping me feel a little better.',
+					prompt: 'But talking to you about everything is helping me feel a little better.',
 					options: [{ text: "I didn't do much.", points: 2 }]
 				}
 			],
@@ -94,22 +76,24 @@ export const fortune: SocialLink = {
 						'This way, I can suggest new alternatives instead of leaving them resigned to their fates.',
 					options: [
 						{ text: "You're such a hard worker.", points: 3 },
-						{ text: 'You must have a lot of free time.', points: 2 }
+						{ text: 'You must have lots of free time.', points: 2 }
 					]
 				}
 			],
-			unlocks: ['Fate Reading']
+			unlocks: ['Affinity Reading']
 		},
 		{
 			rank: 6,
 			requirements: '',
 			choices: [
 				{
-					prompt: 'All this talk about me being a maiden or a monster...',
-					options: [{ text: "You're just Chihaya to me.", points: 3 }]
+					prompt:
+						"You must think I'm weird, huh? All this talk about me being a maiden or a monster...",
+					options: [{ text: "You're just Chihaya to me.", points: 3, routeFlag: 'romance' }]
 				},
 				{
-					prompt: "Phone (P5R): I just can't find the courage to say what I need to…",
+					prompt:
+						"But whenever I face the chairman, I just can't find the courage to say what I need to...",
 					options: [{ text: 'Be honest with yourself.', points: 2 }]
 				}
 			],
@@ -120,29 +104,29 @@ export const fortune: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: "I'm a terrible person, huh?",
+					prompt: "...I'm a terrible person, huh?",
 					options: [
 						{ text: "I don't think so.", points: 3 },
 						{ text: "You shouldn't have tricked them.", points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): I'm done turning a blind eye.",
+					prompt: "I'm done turning a blind eye!",
 					options: [
 						{ text: 'Are you gonna be okay?', points: 2 },
 						{ text: 'Be careful.', points: 2 }
 					]
 				}
 			],
-			unlocks: ['Affinity Reading']
+			unlocks: ['Special Fate Reading']
 		},
 		{
 			rank: 8,
 			requirements:
-				'First visit unlocks Mementos request "Debunking the Psychic" (any answers). Return after completing it for the rest of the rank.',
+				'After the first scene, complete Mementos request "Debunking the Psychic", then return to Chihaya.',
 			choices: [
 				{
-					prompt: "It's even shown up on the news!",
+					prompt: "The chairman turned himself in! It's even shown up on the news!",
 					options: [
 						{ text: 'I know.', points: 3 },
 						{ text: 'I had no idea.', points: 2 }
@@ -158,50 +142,77 @@ export const fortune: SocialLink = {
 					]
 				},
 				{
-					prompt: 'Are you... interested in older women...?',
-					options: [{ text: 'Hell yeah, I am.', points: 3 }]
+					prompt: 'U-Um, <protagonist>-san... Are you... interested in older women...?',
+					options: [{ text: 'Hell yeah I am.', points: 3, routeFlag: 'romance' }]
 				},
 				{
-					prompt: "Phone (P5R): I think that's thanks to your influence.",
+					prompt: "But I didn't. I stood firm. And I think that's thanks to your influence.",
 					options: [{ text: 'It was all your own will.', points: 2 }]
 				}
 			],
-			unlocks: ['Mementos request: Debunking the Psychic']
+			unlocks: ['Celestial Reading', 'Mementos request: Debunking the Psychic']
 		},
 		{
 			rank: 9,
 			requirements: '',
 			choices: [
 				{
-					prompt: 'To avoid our fates...',
+					prompt: 'All any of us ever wanted was to be happy... to avoid our fates...',
 					options: [
 						{ text: 'Well, fate can be changed.', points: 3 },
 						{ text: "That's all in the past now.", points: 2 }
 					]
 				},
 				{
-					prompt: 'Why do you come here?',
+					prompt: '<protagonist>-san... Why do you come here?',
 					options: [
-						{ text: 'I like having my fortune read.', points: 0 },
-						{ text: 'So I can be with you.', points: 0 }
+						{ text: 'I like having my fortune read.', points: 0, routeFlag: 'friendship' },
+						{ text: 'So I can be with you.', points: 0, routeFlag: 'romance' }
 					]
 				},
 				{
-					prompt: 'Phone (P5R, not romanced):',
+					prompt:
+						"If you're in any trouble, please feel free to stop by for a consultation any time!",
+					route: 'friendship',
 					options: [{ text: "I'm planning on it.", points: 2 }]
 				},
 				{
-					prompt: 'Phone (P5R, romanced):',
+					prompt: '...I-I mean, just kidding! I got you! Ahaha... ha...',
+					route: 'romance',
 					options: [{ text: 'I wanted to hear your voice too.', points: 2 }]
 				}
 			],
-			unlocks: ['¥100,000 returned']
+			unlocks: []
 		},
 		{
 			rank: 10,
 			requirements: '',
-			choices: [],
-			unlocks: ['Special Fate Reading', 'Lakshmi fusion']
+			choices: [
+				{
+					prompt: 'Particularly when I tell them they can alter their fate!',
+					route: 'friendship',
+					options: [
+						{ text: 'You seem to be well.', points: 2 },
+						{ text: "You've changed.", points: 2 }
+					]
+				},
+				{
+					prompt: "...That's the fate I've chosen for myself!",
+					options: [
+						{ text: 'I support you.', points: 3 },
+						{ text: 'You have strong convictions.', points: 3 }
+					]
+				},
+				{
+					prompt: "And I'm not used to fancy places like this...",
+					route: 'romance',
+					options: [
+						{ text: "It's actually pretty cute.", points: 3 },
+						{ text: "I don't care about that.", points: 2 }
+					]
+				}
+			],
+			unlocks: ['Lakshmi fusion', 'True Affinity Reading']
 		}
 	]
 };
