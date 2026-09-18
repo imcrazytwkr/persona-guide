@@ -8,8 +8,7 @@ export const star: SocialLink = {
 	},
 	name: 'Hifumi Togo',
 	location: 'Kanda Church',
-	unlock:
-		'- After completing Kaneshiro’s Palace. From 6/25, visit Kanda Church and talk to Hifumi near the front.\n- Charm 3 (Suave)',
+	unlock: '- From 6/25, visit Kanda Church and talk to Hifumi near the front.\n- Charm 3 (Suave)',
 	availability: 'Nights at Kanda Church.',
 	ranks: [
 		{
@@ -17,7 +16,7 @@ export const star: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: "Would you like to exchange IDs with me? There's no obligation, of course...",
+					prompt: "There's no obligation, of course...",
 					options: [
 						{ text: 'Lucky me.', points: 3 },
 						{ text: 'Sure.', points: 2 },
@@ -25,14 +24,15 @@ export const star: SocialLink = {
 					]
 				}
 			],
-			unlocks: ['Koma Sabaki']
+			unlocks: ['Koma Sabaki', '+1 Knowledge']
 		},
 		{
 			rank: 2,
 			requirements: '',
 			choices: [
 				{
-					prompt: "It's as if I assume the role of a queen of a kingdom.",
+					prompt:
+						"I tend to get very aggressive. It's as if I assume the role of a queen of a kingdom...",
 					options: [{ text: "That's interesting.", points: 2 }]
 				},
 				{
@@ -40,7 +40,7 @@ export const star: SocialLink = {
 					options: [{ text: "But you don't want to, right?", points: 2 }]
 				}
 			],
-			unlocks: []
+			unlocks: ['+1 Knowledge']
 		},
 		{
 			rank: 3,
@@ -55,11 +55,12 @@ export const star: SocialLink = {
 					options: [{ text: 'Having a difficult time?', points: 2 }]
 				},
 				{
-					prompt: 'Phone (P5R): How can I teach you properly when I’m this distressed...?',
+					prompt:
+						'But this hardly seems fair... How can I teach you properly when I’m this distressed...?',
 					options: [{ text: 'Bring it on.', points: 2 }]
 				}
 			],
-			unlocks: ['Uchikomi']
+			unlocks: ['Uchikomi', '+1 Knowledge']
 		},
 		{
 			rank: 4,
@@ -77,21 +78,22 @@ export const star: SocialLink = {
 					options: [{ text: "They're cool.", points: 2 }]
 				},
 				{
-					prompt: 'Phone (P5R): Really, I would be delighted to do this again.',
+					prompt:
+						"I hope this won't discourage you from spending time with me. Really, I would be delighted to do this again.",
 					options: [
 						{ text: "I'd love to.", points: 2 },
 						{ text: 'Where shall we go next?', points: 2 }
 					]
 				}
 			],
-			unlocks: ['Book Town (if not already unlocked)']
+			unlocks: ['Book Town']
 		},
 		{
 			rank: 5,
 			requirements: '',
 			choices: [
 				{
-					prompt: 'I apologize. That must have been quite a shock.',
+					prompt: '...I apologize. That must have been quite a shock.',
 					options: [{ text: "She's scary.", points: 2 }]
 				},
 				{
@@ -100,11 +102,11 @@ export const star: SocialLink = {
 				},
 				{
 					prompt:
-						"Phone (P5R): She didn't mean to offend you at all. I hope you'll accept my apology in her place.",
-					options: [{ text: "You've got a lot to deal with.", points: 2 }]
+						"She didn't mean to offend you at all. I hope you'll accept my apology in her place.",
+					options: [{ text: "You've got a lot to deal with...", points: 2 }]
 				}
 			],
-			unlocks: ['Kakoi Kuzushi']
+			unlocks: ['Kakoi Kuzushi', '+1 Knowledge']
 		},
 		{
 			rank: 6,
@@ -119,46 +121,48 @@ export const star: SocialLink = {
 					prompt:
 						"Maybe I should stop playing shogi and just get a job... That way, my family won't get hurt again...",
 					options: [
-						{ text: 'Do what you love.', points: 2 },
-						{ text: 'Do you still like shogi?', points: 2 }
+						{ text: 'Do you still like shogi?', points: 2 },
+						{ text: 'Do what you love.', points: 2 }
 					]
 				},
 				{
-					prompt: 'Phone (P5R): Considering how good a listener you are, I mean.',
+					prompt:
+						'...You might make a fine priest yourself. Considering how good a listener you are, I mean.',
 					options: [{ text: "You're imagining things.", points: 2 }]
 				}
 			],
-			unlocks: ['Sky Tower (if not already unlocked)']
+			unlocks: ['+1 Knowledge', 'Sky Tower']
 		},
 		{
 			rank: 7,
 			requirements: '',
 			choices: [
 				{
-					prompt: '..I confess I am a bit scared, though.',
+					prompt: '...I confess I am a bit scared, though.',
 					options: [
-						{ text: 'It may all come down to luck.', points: 3 },
+						{ text: 'It may come down to luck.', points: 3 },
 						{ text: "That's almost a relief.", points: 2 }
 					]
 				},
 				{
-					prompt: "I have to show them what I'm made of!",
+					prompt:
+						"But I'm sick of being treated like an idol. I have to show them what I'm made of!",
 					options: [
 						{ text: 'I believe in you.', points: 3 },
 						{ text: 'Give it your all.', points: 2 }
 					]
 				}
 			],
-			unlocks: ['Narikin']
+			unlocks: ['Narikin', '+1 Knowledge']
 		},
 		{
 			rank: 8,
 			requirements:
-				'- Knowledge 5 (Erudite)\n- Complete the Mementos request Upstaging the Stage Mother (unlocked during this rank), then return to Hifumi.',
+				'- Knowledge 5 (Erudite)\n- After the first scene, complete Mementos request "Upstaging the Stage Mother", then return to Hifumi.',
 			choices: [
 				{
 					prompt:
-						'That way, I can use the weekly magazine’s popularity against them and instantly become famous.',
+						"That way, I can use the weekly magazine's popularity against them and instantly become famous.",
 					options: [{ text: "That won't work.", points: 2 }]
 				},
 				{
@@ -167,43 +171,61 @@ export const star: SocialLink = {
 						{ text: "I'm glad her heart changed.", points: 3 },
 						{ text: 'Maybe...', points: 2 }
 					]
+				},
+				{
+					prompt:
+						'I was just a little curious about your thoughts. Regarding my decision to reveal my fixed matches, that is.',
+					options: [{ text: 'I support it.', points: 2 }]
 				}
 			],
-			unlocks: ['Mementos request: Upstaging the Stage Mother']
+			unlocks: ['+1 Knowledge', 'Mementos request: Upstaging the Stage Mother']
 		},
 		{
 			rank: 9,
 			requirements: '',
 			choices: [
 				{
-					prompt: "I'm going to win... with these very hands.",
+					prompt:
+						"However, I'm not going to give them the satisfaction. I'm going to win... with these very hands.",
 					options: [{ text: 'Give it all you got.', points: 2 }]
 				},
 				{
-					prompt: "I didn't want to hurt the pieces any longer..",
+					prompt: "I was so ashamed of myself. I didn't want to hurt the pieces any longer...",
 					options: [{ text: 'A very queenly decision.', points: 3 }]
 				},
 				{
 					prompt: '...So this is goodbye.',
 					options: [
-						{ text: 'I want to become stronger.', points: 0 },
-						{ text: 'I want to stay by your side.', points: 0 }
+						{ text: 'I want to become stronger.', points: 0, routeFlag: 'friendship' },
+						{ text: 'I want to stay by your side.', points: 0, routeFlag: 'romance' }
 					]
 				},
 				{
-					prompt: 'If "I want to stay by your side." selected:',
+					prompt: 'What do you mean by that...?',
+					route: 'romance',
 					options: [
-						{ text: 'I want us to date.', points: 0 },
-						{ text: "We'll be friends forever.", points: 0 }
+						{ text: 'I want us to date.', points: 0, routeFlag: 'romance' },
+						{ text: "We'll be friends forever.", points: 0, routeFlag: 'friendship' }
 					]
 				},
 				{
-					prompt: 'Phone (P5R if not romanced):',
-					options: [{ text: 'Any choice', points: 2 }]
+					prompt: 'But I had you... and through our mutual revelations, I was saved. So thank you.',
+					route: 'romance',
+					options: [
+						{ text: 'Anything for you.', points: 2 },
+						{ text: 'It was all a big coincidence.', points: 2 },
+						{ text: 'It was love at first sight.', points: 2 }
+					]
 				},
 				{
-					prompt: 'Phone (P5R if romanced):',
-					options: [{ text: 'Any choice', points: 2 }]
+					prompt:
+						"That's why I can say with certainty. Today's loss was not a setback, but a glorious step forward.",
+					route: 'friendship',
+					options: [
+						{ text: "That's a great way to see it.", points: 2 },
+						{ text: "You're overthinking it.", points: 2 },
+						{ text: "Let's win the next one.", points: 2 }
+					]
 				}
 			],
 			unlocks: ['Touryou']
@@ -211,8 +233,18 @@ export const star: SocialLink = {
 		{
 			rank: 10,
 			requirements: '',
-			choices: [],
-			unlocks: ['Togo System', 'Lucifer fusion']
+			choices: [
+				{
+					prompt:
+						"I quit the Ladies Professional Shogi Players' Association. I need to start over as an amateur.",
+					options: [
+						{ text: "You'll triumph in the end.", points: 3 },
+						{ text: "Just don't lose.", points: 3 },
+						{ text: "That's rough.", points: 2 }
+					]
+				}
+			],
+			unlocks: ['Lucifer fusion', 'Togo System']
 		}
 	]
 };
