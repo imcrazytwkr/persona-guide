@@ -7,8 +7,8 @@ export const death: SocialLink = {
 		value: 'death'
 	},
 	name: 'Tae Takemi',
-	location: 'Yongen-Jaya clinic (near Leblanc)',
-	unlock: 'After 4/18, visit the clinic near Leblanc and talk to her.',
+	location: 'Takemi Medical Clinic, Yongen-Jaya',
+	unlock: 'After 4/18, visit the clinic in Yongen-Jaya and talk to her.',
 	availability: 'Daytime any day of the week. Day and night on rainy days.',
 	ranks: [
 		{
@@ -154,7 +154,7 @@ export const death: SocialLink = {
 					prompt: "Ugh. I wish I hadn't shown you that side of me...",
 					options: [
 						{ text: 'We all do sometimes.', points: 3 },
-						{ text: "I'm glad you did. (Romance flag)", points: 2 }
+						{ text: "I'm glad you did.", points: 2, routeFlag: 'romance' }
 					]
 				}
 			],
@@ -167,7 +167,7 @@ export const death: SocialLink = {
 			choices: [
 				{
 					prompt: "I'm all out of allies...",
-					options: [{ text: "I'm your ally. (Romance flag)", points: 2 }]
+					options: [{ text: "I'm your ally.", points: 2, routeFlag: 'romance' }]
 				},
 				{
 					prompt: "So she's... she's alive...",
@@ -180,7 +180,7 @@ export const death: SocialLink = {
 				{
 					prompt: '...Sorry. Just hang in there, okay?',
 					options: [
-						{ text: "It's for Miwa-chan. (Romance flag)", points: 3 },
+						{ text: "It's for Miwa-chan.", points: 3, routeFlag: 'romance' },
 						{ text: "It's for you.", points: 3 },
 						{ text: "It's for my exams.", points: 2 }
 					]
@@ -219,36 +219,28 @@ export const death: SocialLink = {
 					prompt: "...Don't tell me you're in love with me or something.",
 					route: 'romance',
 					options: [
-						{ text: 'I love you.', points: 2 },
-						{ text: 'What do you think?', points: 0 }
+						{ text: 'I love you.', points: 2, routeFlag: 'romance' },
+						{ text: 'What do you think?', points: 0, routeFlag: 'friendship' }
 					]
 				},
 				{
 					prompt: "Or... I can give you a 'special examination' if you'd like.",
 					route: 'romance',
 					options: [
-						{ text: "It isn't a joke.", points: 3 },
-						{ text: 'That sounds good.', points: 0 }
+						{ text: "It isn't a joke.", points: 3, routeFlag: 'romance' },
+						{ text: 'That sounds good.', points: 0, routeFlag: 'friendship' }
 					]
 				},
 				{
 					prompt:
 						"Turns out my little guinea pig caught an illness that's even more annoying and persistent than Crawford-Ende's.",
 					route: 'romance',
-					options: [
-						{ text: 'So did you.', points: 2 },
-						{ text: "It's true love.", points: 0 },
-						{ text: "I've always loved you.", points: 0 }
-					]
+					options: [{ text: 'So did you.', points: 2 }]
 				},
 				{
 					prompt: "You really are the best guinea pig I could've hoped for.",
 					route: 'friendship',
-					options: [
-						{ text: "I'm glad we saw it through.", points: 2 },
-						{ text: "You're welcome.", points: 0 },
-						{ text: 'It was a breeze.', points: 0 }
-					]
+					options: [{ text: "I'm glad we saw it through.", points: 2 }]
 				}
 			],
 			unlocks: ['Inokashira Park']
