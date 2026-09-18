@@ -1,7 +1,7 @@
 import type { GameId, GameRoute, RouteId, SocialLink } from '$lib/types';
 import { invalidate } from '$app/navigation';
 
-export const routeStorageKey = (game: GameId, arcana: string): `${string}:${string}` =>
+const routeStorageKey = (game: GameId, arcana: string): `${string}:${string}` =>
 	`${game}:${arcana}:route`;
 
 // Wish I had proper override system for that
