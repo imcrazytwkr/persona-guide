@@ -1,1 +1,0 @@
-var e=[{id:`p5r`,title:`Persona 5 Royal`}];function t(t){return e.find(e=>e.id===t)}function n(t){return e.some(e=>e.id===t)}export{n,t};
