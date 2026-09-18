@@ -16,7 +16,7 @@ export const devil: SocialLink = {
 			rank: 1,
 			requirements: '',
 			choices: [],
-			unlocks: ['Rumor-filled Scoop']
+			unlocks: ['Rumor-filled Scoop', '+3 Charm']
 		},
 		{
 			rank: 2,
@@ -27,11 +27,11 @@ export const devil: SocialLink = {
 					options: [{ text: 'Mishima might...', points: 2 }]
 				},
 				{
-					prompt: "Why are you coming to a bar if you can't even drink alcohol?",
+					prompt: "Anyway, why are you coming to a bar if you can't even drink alcohol?",
 					options: [{ text: "It's for the article.", points: 2 }]
 				}
 			],
-			unlocks: []
+			unlocks: ['+3 Charm']
 		},
 		{
 			rank: 3,
@@ -44,31 +44,32 @@ export const devil: SocialLink = {
 				},
 				{
 					prompt: "That's why I can't quit... and why I'll never give up.",
-					options: [{ text: 'Was she falsely accused?', points: 2 }]
+					options: [{ text: 'She was falsely accused?', points: 2 }]
 				}
 			],
-			unlocks: []
+			unlocks: ['Shocking Scoop', '+3 Charm']
 		},
 		{
 			rank: 4,
 			requirements: '',
 			choices: [
 				{
-					prompt: "We're totally dating, aren't we, sweetie?",
+					prompt: "W-Wait... We're totally dating, aren't we, sweetie?",
 					options: [
 						{ text: 'Of course we are.', points: 2 },
 						{ text: "Don't tell anybody.", points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): I'll write you a solid article on the Phantom Thieves.",
+					prompt:
+						"And I'll repay you with the power of journalism, of course. I'll write you a solid article on the Phantom Thieves.",
 					options: [
 						{ text: 'Leave it to me.', points: 2 },
 						{ text: 'That was our deal.', points: 2 }
 					]
 				}
 			],
-			unlocks: ['Shocking Scoop']
+			unlocks: ['+3 Charm']
 		},
 		{
 			rank: 5,
@@ -83,11 +84,12 @@ export const devil: SocialLink = {
 					]
 				},
 				{
-					prompt: 'Phone (P5R): For me digging up your records and such without asking, I mean...',
+					prompt:
+						"I'm sorry about earlier. Really. For me digging up your records and such without asking, I mean...",
 					options: [{ text: "I don't mind it.", points: 2 }]
 				}
 			],
-			unlocks: []
+			unlocks: ['Unbelievable Scoop']
 		},
 		{
 			rank: 6,
@@ -98,7 +100,7 @@ export const devil: SocialLink = {
 					options: [{ text: 'He must not like you.', points: 2 }]
 				},
 				{
-					prompt: 'Maybe Kayo really was the culprit.',
+					prompt: '*gasp* Maybe Kayo really was the true culprit...',
 					options: [{ text: 'You should trust in her.', points: 2 }]
 				},
 				{
@@ -111,7 +113,7 @@ export const devil: SocialLink = {
 				},
 				{
 					prompt:
-						"Phone (P5R): I'm only able to meet my insane quota because of the info you give me on the Phantom Thieves.",
+						"I'm only able to meet my insane quota because of the info you give me on the Phantom Thieves.",
 					options: [{ text: "I'll dig up some more for you.", points: 2 }]
 				}
 			],
@@ -122,34 +124,34 @@ export const devil: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: 'What should I do? Should I go knock him out?!',
+					prompt: 'What should I do? Should I go knock him out!?',
 					options: [
-						{ text: "Let's think of another way.", points: 3 },
 						{ text: "Don't let him provoke you.", points: 3 },
+						{ text: "Let's think of another way.", points: 3 },
 						{ text: 'Calm down.', points: 2 }
 					]
 				},
 				{
 					prompt: 'I wish I was better at controlling my emotions. Like you are.',
 					options: [
-						{ text: "You're charming as you are.", points: 3 },
+						{ text: "You're charming as you are.", points: 3, routeFlag: 'romance' },
 						{ text: 'You should work on that.', points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): I'll do whatever it takes to find her...!",
+					prompt: "But I finally got a lead on Kayo. I'll do whatever it takes to find her...!",
 					options: [{ text: "That's the spirit.", points: 2 }]
 				}
 			],
-			unlocks: ['Outrageous Scoop']
+			unlocks: ['Outrageous Scoop', '+3 Charm']
 		},
 		{
 			rank: 8,
 			requirements:
-				'Complete the Mementos request Fighting for Truth in Journalism (unlocked during this rank), then return to Ohya.',
+				'After the first scene, complete Mementos request "Fighting for Truth in Journalism", then return to Ohya.',
 			choices: [
 				{
-					prompt: 'Say something.',
+					prompt: '...Well, say something.',
 					options: [{ text: 'You seem tired.', points: 2 }]
 				},
 				{
@@ -158,18 +160,18 @@ export const devil: SocialLink = {
 					options: [
 						{ text: "That's not like you.", points: 3 },
 						{ text: 'You need to pursue the truth.', points: 3 },
-						{ text: "I'll go with you.", points: 3 }
+						{ text: "I'll go with you.", points: 3, routeFlag: 'romance' }
 					]
 				},
 				{
-					prompt: "Phone (P5R): From now on, I'm always gonna chase the truth.",
+					prompt: "I'm a journalist. From now on, I'm always gonna chase the truth.",
 					options: [
 						{ text: 'Good luck.', points: 2 },
 						{ text: 'Be careful.', points: 2 }
 					]
 				}
 			],
-			unlocks: ['Mementos request: Fighting for Truth in Journalism']
+			unlocks: ['+3 Charm', 'Mementos request: Fighting for Truth in Journalism']
 		},
 		{
 			rank: 9,
@@ -182,26 +184,33 @@ export const devil: SocialLink = {
 				{
 					prompt: "I'm sure I'll get targeted... so to be safe, you shouldn't come here again.",
 					options: [
-						{ text: "I can't leave you.", points: 3 },
+						{ text: "I can't leave you.", points: 3, routeFlag: 'romance' },
 						{ text: 'I want to help.', points: 3 }
 					]
 				},
 				{
 					prompt: 'That couple act...',
 					options: [
-						{ text: 'I took it seriously.', points: 0 },
-						{ text: "I didn't take it seriously.", points: 0 }
+						{ text: 'I took it seriously.', points: 0, routeFlag: 'romance' },
+						{ text: "I didn't take it seriously.", points: 0, routeFlag: 'friendship' }
 					]
 				},
 				{
-					prompt: 'Only if "I took it seriously":',
+					prompt: 'I-I mean, um... seriously?',
+					route: 'romance',
 					options: [
-						{ text: 'I love you, Ichiko.', points: 0 },
-						{ text: "I'm just kidding.", points: 0 }
+						{ text: 'I love you, Ichiko.', points: 0, routeFlag: 'romance' },
+						{ text: "I'm just kidding.", points: 0, routeFlag: 'friendship' }
 					]
 				},
 				{
-					prompt: 'Phone (P5R if romanced):',
+					prompt: '*hic* Ahhhh... Now that was a hell of a party...',
+					options: [{ text: 'You alright?', points: 2 }]
+				},
+				{
+					prompt:
+						"Actually, do YOU have anything you wanna say to me instead? Cause now's the time.",
+					route: 'romance',
 					options: [
 						{ text: 'I wanted to hear your voice.', points: 2 },
 						{ text: "Please don't dump me.", points: 2 }
@@ -213,8 +222,31 @@ export const devil: SocialLink = {
 		{
 			rank: 10,
 			requirements: '',
-			choices: [],
-			unlocks: ['Legendary Scoop', 'Beelzebub fusion']
+			choices: [
+				{
+					prompt: '...I think it really captures the spirit of journalism.',
+					options: [
+						{ text: 'Is that entertainment?', points: 3 },
+						{ text: "You're really earnest.", points: 2 }
+					]
+				},
+				{
+					prompt: "So, we're planning to throw in additional articles while we have the chance.",
+					options: [
+						{ text: "I'm glad to hear that.", points: 3 },
+						{ text: "I'll read the next issue.", points: 3 }
+					]
+				},
+				{
+					prompt: 'Or...',
+					route: 'romance',
+					options: [
+						{ text: "It's up to you.", points: 3 },
+						{ text: 'I want to go to your place.', points: 3 }
+					]
+				}
+			],
+			unlocks: ['Beelzebub fusion', 'Legendary Scoop']
 		}
 	]
 };
