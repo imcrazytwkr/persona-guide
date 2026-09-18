@@ -69,7 +69,7 @@ export const judgement: SocialLink = {
 			rank: 10,
 			requirements: 'Automatically on 11/20.',
 			choices: [],
-			unlocks: ['True Judgement']
+			unlocks: ['Satan fusion', 'True Justice']
 		}
 	]
 };
