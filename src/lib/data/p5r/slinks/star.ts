@@ -7,7 +7,6 @@ export const star: SocialLink = {
 		value: 'star'
 	},
 	name: 'Hifumi Togo',
-	romanNumeral: 'XVII',
 	location: 'Kanda Church',
 	unlock:
 		'- After completing Kaneshiro’s Palace. From 6/25, visit Kanda Church and talk to Hifumi near the front.\n- Charm 3 (Suave)',

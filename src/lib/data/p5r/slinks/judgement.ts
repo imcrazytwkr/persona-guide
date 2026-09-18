@@ -7,7 +7,6 @@ export const judgement: SocialLink = {
 		value: 'judgement'
 	},
 	name: 'Sae Niijima',
-	romanNumeral: 'XX',
 	location: 'Story',
 	unlock: 'Automatically on 7/9.',
 	availability: 'Ranks up automatically with story events. No hangouts.',

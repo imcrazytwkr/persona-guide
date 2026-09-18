@@ -7,7 +7,6 @@ export const hanged: SocialLink = {
 		value: 'hanged'
 	},
 	name: 'Munehisa Iwai',
-	romanNumeral: 'XII',
 	location: 'Shibuya Untouchable (airsoft shop)',
 	unlock:
 		"- After 5/6, see the airsoft shop event with the 'package' you have to hold.\n- Guts 4 (Dauntless)",

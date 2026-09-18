@@ -7,7 +7,6 @@ export const lovers: SocialLink = {
 		value: 'lovers'
 	},
 	name: 'Ann Takamaki',
-	romanNumeral: 'VI',
 	location: 'Underground Mall in Shibuya after school',
 	unlock: 'Unmissable event on 4/15.',
 	availability:

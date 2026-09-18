@@ -7,7 +7,6 @@ export const temperance: SocialLink = {
 		value: 'temperance'
 	},
 	name: 'Sadayo Kawakami',
-	romanNumeral: 'XIV',
 	location: 'Leblanc (call from the phone)',
 	unlock:
 		'- On 5/24, go to the maid-request event with Ryuji. Afterwards, talk to Kawakami in front of the Faculty Lounge for her number, then call her from Leblanc.\n- Guts 3 (Staunch)',

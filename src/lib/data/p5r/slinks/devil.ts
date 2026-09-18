@@ -7,7 +7,6 @@ export const devil: SocialLink = {
 		value: 'devil'
 	},
 	name: 'Ichiko Ohya',
-	romanNumeral: 'XV',
 	location: 'Crossroads Bar, Shinjuku',
 	unlock:
 		'After gaining access to Shinjuku, visit Crossroads and talk to Ohya (you will have met her earlier in the story).',

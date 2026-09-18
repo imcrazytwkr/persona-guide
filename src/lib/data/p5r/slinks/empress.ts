@@ -7,7 +7,6 @@ export const empress: SocialLink = {
 		value: 'empress'
 	},
 	name: 'Haru Okumura',
-	romanNumeral: 'III',
 	location: 'School rooftop after school; school gates on Sundays',
 	unlock:
 		'After 10/30, find and chat to her on the school rooftop. On Sundays, she hangs out at the school gates.',

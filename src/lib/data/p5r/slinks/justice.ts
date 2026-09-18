@@ -7,7 +7,6 @@ export const justice: SocialLink = {
 		value: 'justice'
 	},
 	name: 'Goro Akechi',
-	romanNumeral: 'VIII',
 	location: 'Kichijoji (Darts & Billiards)',
 	unlock: 'Unmissable story event on 6/10.',
 	availability:

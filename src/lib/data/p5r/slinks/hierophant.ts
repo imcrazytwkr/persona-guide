@@ -7,7 +7,6 @@ export const hierophant: SocialLink = {
 		value: 'hierophant'
 	},
 	name: 'Sojiro Sakura',
-	romanNumeral: 'V',
 	location: 'Café Leblanc',
 	unlock: 'Unlocks as the story progresses; hang out with Sojiro at Leblanc at night.',
 	availability: 'Nighttime every day except Wednesday. Day and night on rainy days.',

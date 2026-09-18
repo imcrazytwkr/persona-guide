@@ -7,7 +7,6 @@ export const faith: SocialLink = {
 		value: 'faith'
 	},
 	name: 'Kasumi Yoshizawa',
-	romanNumeral: 'Faith',
 	location: 'Kichijoji',
 	unlock: 'Unmissable event on the 5/30 field trip.',
 	availability:

@@ -7,7 +7,6 @@ export const fool: SocialLink = {
 		value: 'fool'
 	},
 	name: 'Igor',
-	romanNumeral: '0',
 	location: 'Velvet Room',
 	unlock: 'Automatically on 4/12.',
 	availability: 'Ranks up automatically with story events. No hangouts.',

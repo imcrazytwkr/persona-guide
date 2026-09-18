@@ -7,7 +7,6 @@ export const moon: SocialLink = {
 		value: 'moon'
 	},
 	name: 'Yuuki Mishima',
-	romanNumeral: 'XVIII',
 	location: 'Shibuya or Shinjuku',
 	unlock: 'Automatic story event on 5/6.',
 	availability:

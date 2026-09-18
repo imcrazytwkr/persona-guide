@@ -7,7 +7,6 @@ export const tower: SocialLink = {
 		value: 'tower'
 	},
 	name: 'Shinya Oda',
-	romanNumeral: 'XVI',
 	location: 'Shibuya Arcade',
 	unlock:
 		'On 9/4 Mishima texts about the Mementos request "Winners Don’t Use Cheats". Pursue it to meet Shinya.',

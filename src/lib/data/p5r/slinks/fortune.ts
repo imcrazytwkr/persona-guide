@@ -7,7 +7,6 @@ export const fortune: SocialLink = {
 		value: 'fortune'
 	},
 	name: 'Chihaya Mifune',
-	romanNumeral: 'X',
 	location: 'Shinjuku (fortune-telling stall), nighttime, not raining',
 	unlock:
 		'From 6/22: get a prediction, buy the Holy Stone for ¥100,000, return about the stone, complete Mementos request "Ending the Boyfriend\'s Abuse", then see Chihaya again.',

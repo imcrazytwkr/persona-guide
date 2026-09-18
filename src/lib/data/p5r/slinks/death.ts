@@ -7,7 +7,6 @@ export const death: SocialLink = {
 		value: 'death'
 	},
 	name: 'Tae Takemi',
-	romanNumeral: 'XIII',
 	location: 'Yongen-Jaya clinic (near Leblanc)',
 	unlock: 'After 4/18, visit the clinic near Leblanc and talk to her.',
 	availability: 'Daytime any day of the week. Day and night on rainy days.',

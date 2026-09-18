@@ -7,7 +7,6 @@ export const strength: SocialLink = {
 		value: 'strength'
 	},
 	name: 'Caroline & Justine',
-	romanNumeral: 'XI',
 	location: 'Velvet Room',
 	unlock: 'Unlocked automatically on 5/18.',
 	availability: 'Any time the Velvet Room is accessible.',

@@ -7,7 +7,6 @@ export const hermit: SocialLink = {
 		value: 'hermit'
 	},
 	name: 'Futaba Sakura',
-	romanNumeral: 'IX',
 	location: 'Outside LeBlanc',
 	unlock: 'Unmissable nighttime event on 8/31.',
 	availability:

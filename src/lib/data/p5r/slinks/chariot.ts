@@ -7,7 +7,6 @@ export const chariot: SocialLink = {
 		value: 'chariot'
 	},
 	name: 'Ryuji Sakamoto',
-	romanNumeral: 'VII',
 	location: 'School after school; arcade on days off',
 	unlock: 'Unmissable event on 4/12.',
 	availability: 'Daytime every day of the week; day and night on rainy days.',

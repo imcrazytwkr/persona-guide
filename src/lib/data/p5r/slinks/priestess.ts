@@ -7,7 +7,6 @@ export const priestess: SocialLink = {
 		value: 'priestess'
 	},
 	name: 'Makoto Niijima',
-	romanNumeral: 'II',
 	location: 'Student Council Office or school gates',
 	unlock:
 		'- After clearing the Bank Palace, find Makoto in front of the Student Council Office at school.\n- Knowledge 3 (Scholarly)',

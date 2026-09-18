@@ -7,7 +7,6 @@ export const emperor: SocialLink = {
 		value: 'emperor'
 	},
 	name: 'Yusuke Kitagawa',
-	romanNumeral: 'IV',
 	location: 'Shibuya Station Underground Walkway',
 	unlock: 'Unmissable event on 6/18. Talk to Yusuke at the underground passageway afterwards.',
 	availability:

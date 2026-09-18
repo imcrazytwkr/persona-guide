@@ -7,7 +7,6 @@ export const councillor: SocialLink = {
 		value: 'councillor'
 	},
 	name: 'Takuto Maruki',
-	romanNumeral: 'Councillor',
 	location: 'Shujin Academy',
 	unlock: 'Unmissable event on 5/13.',
 	availability:
