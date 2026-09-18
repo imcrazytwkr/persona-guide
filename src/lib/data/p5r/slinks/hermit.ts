@@ -7,10 +7,10 @@ export const hermit: SocialLink = {
 		value: 'hermit'
 	},
 	name: 'Futaba Sakura',
-	location: 'Outside LeBlanc',
+	location: 'Outside Leblanc',
 	unlock: 'Unmissable nighttime event on 8/31.',
 	availability:
-		'Wednesday, Thursday, Saturday and Sunday daytimes. Stays indoors when it rains. Progress can be blocked by a Hierophant (Sojiro) side quest.',
+		'Wednesday, Thursday, Saturday, and Sunday daytime. Stays indoors when it rains. Progress can be blocked by a Hierophant (Sojiro) side quest.',
 	ranks: [
 		{
 			rank: 1,
@@ -28,14 +28,14 @@ export const hermit: SocialLink = {
 					options: [{ text: "That's a great idea.", points: 2 }]
 				},
 				{
-					prompt: "Do you think I'll be able to?",
+					prompt: "...Do you think I'll be able to?",
 					options: [
 						{ text: 'If we work together.', points: 3 },
 						{ text: 'Want me to help?', points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): Do you think it'd make Sojiro happy?",
+					prompt: "Do you think it'd make Sojiro happy?",
 					options: [{ text: 'I bet it will.', points: 2 }]
 				}
 			],
@@ -46,18 +46,19 @@ export const hermit: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: 'I, I, I...',
+					prompt: 'I... I, I, I...',
 					options: [{ text: 'I was about to come find you.', points: 3 }]
 				},
 				{
-					prompt: 'Bam, a wild Joker appeared!',
+					prompt:
+						'But then I thought about you while I was wandering around the store, and bam, a wild <protagonist> appeared!',
 					options: [
 						{ text: 'Good to see you again.', points: 3 },
 						{ text: "You're the one who appeared.", points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): I'll clear it in no time...! Right?",
+					prompt: "But at this pace, I'll clear it in no time...! Right?",
 					options: [{ text: "We'll both do our best.", points: 2 }]
 				}
 			],
@@ -68,25 +69,26 @@ export const hermit: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: 'Can I use a Goho-M instead...?',
+					prompt: 'Can I use a Goho-M instead?',
 					options: [
-						{ text: 'Nope.', points: 2 },
-						{ text: "Let's do this together.", points: 3 }
+						{ text: "Let's do this together.", points: 3 },
+						{ text: 'Nope.', points: 2 }
 					]
 				},
 				{
-					prompt: 'Am I weird, Joker?',
+					prompt: 'I guess dwelling on the past is just a bad habit of mine, huh?',
 					options: [
+						{ text: "I think it's cute.", points: 3 },
 						{ text: 'Not at all.', points: 2 },
-						{ text: 'Everyone does it.', points: 2 },
-						{ text: "I think it's cute.", points: 3 }
+						{ text: 'Everyone does it.', points: 2 }
 					]
 				},
 				{
-					prompt: 'Phone (P5R): The real world is a scary place...',
+					prompt:
+						"I still think I'd run out of MP way too fast. The real world is a scary place...",
 					options: [
 						{ text: "We'll take it slow.", points: 2 },
-						{ text: "I'll help you anytime.", points: 3 }
+						{ text: "I'll help you anytime.", points: 2 }
 					]
 				}
 			],
@@ -104,15 +106,16 @@ export const hermit: SocialLink = {
 					]
 				},
 				{
-					prompt: 'Are you an NPC?!',
+					prompt: 'Nishima... Are you an NPC!?',
 					options: [
-						{ text: "What's an NPC?", points: 2 },
-						{ text: "He's the protagonist.", points: 3 }
+						{ text: "He's the protagonist.", points: 3 },
+						{ text: "What's an NPC?", points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): No more getting scared of the police! C'mon, tell me I'm cool!",
-					options: [{ text: 'You did great.', points: 3 }]
+					prompt:
+						"I'm a completely different person now! No more getting scared of the police! C'mon, tell me I'm cool!",
+					options: [{ text: 'You did great.', points: 2 }]
 				}
 			],
 			unlocks: []
@@ -122,10 +125,11 @@ export const hermit: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: 'She started saying it every day from then on.',
+					prompt:
+						"But one day, she said something to me: 'Good morning.' She started saying it every day from then on.",
 					options: [
-						{ text: 'Were you happy?', points: 2 },
-						{ text: 'That must have been a shock.', points: 3 }
+						{ text: 'That must have been a shock.', points: 3 },
+						{ text: 'Were you happy?', points: 2 }
 					]
 				},
 				{
@@ -133,7 +137,8 @@ export const hermit: SocialLink = {
 					options: [{ text: "You didn't know any better.", points: 2 }]
 				},
 				{
-					prompt: 'Phone (P5R): I get so scared...',
+					prompt:
+						"I know I promised myself that I'd do this... but when I remember how angry Kana-chan got, I get so scared...",
 					options: [{ text: 'Are you running away again?', points: 2 }]
 				}
 			],
@@ -144,7 +149,8 @@ export const hermit: SocialLink = {
 			requirements: '',
 			choices: [
 				{
-					prompt: "They're even selling the pictures now...",
+					prompt:
+						"...Apparently, they're still having her model in strange clothes. They're even selling the pictures now...",
 					options: [
 						{ text: 'What horrible parents.', points: 2 },
 						{ text: 'We have to put a stop to this.', points: 2 }
@@ -163,8 +169,7 @@ export const hermit: SocialLink = {
 		},
 		{
 			rank: 8,
-			requirements:
-				"Complete the Daughter's Just a Meal Ticket Mementos request unlocked at Rank 7.",
+			requirements: 'Complete Mementos request "Daughter\'s Just a Meal Ticket".',
 			choices: [
 				{
 					prompt: 'Long story short... we made up! I finally apologized to her.',
@@ -175,14 +180,14 @@ export const hermit: SocialLink = {
 					]
 				},
 				{
-					prompt: "It's all because of you that I could do it!",
+					prompt: "It's all because of you that I could do it, <protagonist>!",
 					options: [
-						{ text: 'You worked really hard, too.', points: 3 },
+						{ text: 'You worked really hard too.', points: 3 },
 						{ text: "You're making me blush...", points: 2 }
 					]
 				},
 				{
-					prompt: "Phone (P5R): I'm so glad I cleared that goal.",
+					prompt: "And now I'm getting along with Kana-chan... I'm so glad I cleared that goal.",
 					options: [
 						{ text: 'Congrats.', points: 2 },
 						{ text: 'Want more pats?', points: 2 }
@@ -199,13 +204,13 @@ export const hermit: SocialLink = {
 					prompt: "I'm gonna go back.",
 					options: [
 						{ text: "You've really matured.", points: 3 },
-						{ text: 'What if you get bullied again?', points: 2 }
+						{ text: "And if you're bullied again?", points: 2 }
 					]
 				},
 				{
 					prompt: "Then even when we're apart, I can't stop thinking about you...",
 					options: [
-						{ text: 'Are you OK, Futaba?', points: 3 },
+						{ text: 'Are you okay, Futaba?', points: 3 },
 						{ text: "You're imagining things.", points: 2 }
 					]
 				},
@@ -217,19 +222,25 @@ export const hermit: SocialLink = {
 					]
 				},
 				{
-					prompt: 'Why...?',
+					prompt: 'Why, <protagonist>...?',
 					options: [
-						{ text: "Because we're teammates. (Friendship)", points: 0 },
-						{ text: 'Because I love you. (Romance)', points: 0 }
+						{ text: "Because we're teammates.", points: 0, routeFlag: 'friendship' },
+						{ text: 'Because I love you.', points: 0, routeFlag: 'romance' }
 					]
 				},
 				{
-					prompt: 'Phone (P5R, Friendship)',
-					options: [{ text: 'A true friend.', points: 2 }]
+					prompt: 'Uh... I mean, like... what do you want...?',
+					route: 'romance',
+					options: [{ text: 'Do I really have to say it?', points: 2 }]
 				},
 				{
-					prompt: 'Phone (P5R, Romance)',
-					options: [{ text: 'Any choice', points: 0 }]
+					prompt: 'Could you get specific? What kind of teammate am I to you?',
+					route: 'friendship',
+					options: [
+						{ text: 'A true friend.', points: 2 },
+						{ text: 'A partner.', points: 2 },
+						{ text: 'A key item.', points: 2 }
+					]
 				}
 			],
 			unlocks: ['Emergency Shift']
@@ -237,8 +248,33 @@ export const hermit: SocialLink = {
 		{
 			rank: 10,
 			requirements: '',
-			choices: [],
-			unlocks: ['Final Guard', 'Ongyo-Ki fusion', 'Second Awakening (Prometheus)']
+			choices: [
+				{
+					prompt: 'I just hope I can keep changing little by little... like everyone else does.',
+					options: [
+						{ text: 'Take your time.', points: 3 },
+						{ text: 'You can do this.', points: 3 },
+						{ text: "We'll do it together.", points: 3 }
+					]
+				},
+				{
+					prompt: "Even Kana-chan's trying to step out into the world.",
+					options: [
+						{ text: "You can't lose to her.", points: 3 },
+						{ text: 'Do you want a job too?', points: 2 }
+					]
+				},
+				{
+					prompt: "That way... we'll never be apart if I don't want to be.",
+					route: 'romance',
+					options: [
+						{ text: 'You already have that right.', points: 3 },
+						{ text: 'Took you long enough to ask.', points: 3 },
+						{ text: 'I want that right too.', points: 3 }
+					]
+				}
+			],
+			unlocks: ['Second Awakening (Prometheus)', 'Ongyo-Ki fusion', 'Final Guard']
 		}
 	]
 };
