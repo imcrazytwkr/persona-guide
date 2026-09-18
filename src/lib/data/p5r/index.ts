@@ -1,4 +1,4 @@
-import type { GameData, GameId, GameMeta, GameRoute, SocialLink } from '$lib/types';
+import type { GameData, GameId, GameRoute, SocialLink } from '$lib/types';
 
 import {
 	fool,
@@ -35,10 +35,6 @@ const routes: GameRoute[] = [
 	{ id: 'romance', label: 'Romance' }
 ];
 
-const defaultRoute = 'friendship';
-
-export const meta: GameMeta = { routes, defaultRoute };
-
 export const socialLinks: SocialLink[] = [
 	fool,
 	magician,
@@ -65,9 +61,4 @@ export const socialLinks: SocialLink[] = [
 	councillor
 ];
 
-export const gameData = Object.freeze<GameData>({ id, title, routes, defaultRoute, socialLinks });
-
-export function arcanaLabel(arcana: string): string {
-	if (arcana === 'hanged') return 'Hanged Man';
-	return arcana.charAt(0).toUpperCase() + arcana.slice(1);
-}
+export const gameData = Object.freeze<GameData>({ id, title, routes, socialLinks });

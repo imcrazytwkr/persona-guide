@@ -7,8 +7,6 @@ export type GameRoute = {
 	label: string;
 };
 
-export type GameMeta = {};
-
 export type DialogueOption = {
 	text: string;
 	points: number;
@@ -37,7 +35,6 @@ export type SocialLink = {
 	game: GameId;
 	arcana: Arcana;
 	name: string;
-	romanNumeral: string;
 	location: string;
 	availability: string;
 	unlock: string;
@@ -51,6 +48,5 @@ export type Game = {
 
 export type GameData = Game & {
 	routes: GameRoute[];
-	defaultRoute: RouteId;
 	socialLinks: SocialLink[];
 };
