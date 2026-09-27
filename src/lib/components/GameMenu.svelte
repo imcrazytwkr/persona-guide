@@ -38,11 +38,11 @@
 			</button>
 		</Navigation.Header>
 		<Navigation.Content class="flex-1 overflow-y-auto p-2">
-			<Navigation.Menu class="flex flex-col gap-1">
+			<Navigation.Menu>
 				{#each games as g (g.id)}
 					<Navigation.TriggerAnchor
 						href={resolve(`/${g.id}`)}
-						class="btn min-h-11 w-full justify-start {g.id === game
+						class="btn w-full justify-start {g.id === game
 							? 'preset-filled-primary-500'
 							: 'preset-tonal-surface'}"
 						aria-current={g.id === game ? 'page' : undefined}

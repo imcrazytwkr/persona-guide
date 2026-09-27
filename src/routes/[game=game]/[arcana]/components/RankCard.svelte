@@ -31,7 +31,7 @@
 >
 	<label class="flex min-h-11 items-center gap-3">
 		<input
-			class="checkbox size-6"
+			class="checkbox"
 			type="checkbox"
 			{checked}
 			onchange={() => ranks.toggleRank(arcana, rank.rank)}

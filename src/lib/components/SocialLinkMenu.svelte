@@ -15,6 +15,7 @@
 
 	import { resolve } from '$app/paths';
 
+	import NavItem from '$lib/components/NavItem.svelte';
 	import Close from '$lib/icons/close.svg?component';
 	import { getRankState } from '$lib/state/rank';
 
@@ -40,33 +41,21 @@
 			</button>
 		</Navigation.Header>
 		<Navigation.Content class="flex-1 overflow-y-auto p-2">
-			<Navigation.Menu class="flex flex-col gap-1">
-				<Navigation.TriggerAnchor
+			<Navigation.Menu>
+				<NavItem
 					href={resolve(`/${game}`)}
-					class="btn min-h-11 w-full justify-start {arcana
-						? 'preset-tonal-surface'
-						: 'preset-filled-primary-500'}"
-					aria-current={arcana ? undefined : 'page'}
+					label="All social links"
+					active={!arcana}
 					onclick={onClose}
-				>
-					<Navigation.TriggerText>All social links</Navigation.TriggerText>
-				</Navigation.TriggerAnchor>
+				/>
 				{#each links as link (link.arcana.value)}
-					<Navigation.TriggerAnchor
+					<NavItem
 						href={resolve(`/${game}/${link.arcana.value}`)}
-						class="btn min-h-11 w-full justify-between {arcana === link.arcana.value
-							? 'preset-filled-primary-500'
-							: 'preset-tonal-surface'}"
-						aria-current={arcana === link.arcana.value ? 'page' : undefined}
+						label={link.arcana.label}
+						rank={ranks.getRank(link.arcana.value)}
+						active={arcana === link.arcana.value}
 						onclick={onClose}
-					>
-						<Navigation.TriggerText class="truncate text-left">
-							{link.arcana.label}
-						</Navigation.TriggerText>
-						<span class="chip preset-filled-surface-200-800">
-							{ranks.getRank(link.arcana.value)}
-						</span>
-					</Navigation.TriggerAnchor>
+					/>
 				{/each}
 			</Navigation.Menu>
 		</Navigation.Content>

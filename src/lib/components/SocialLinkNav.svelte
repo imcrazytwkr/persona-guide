@@ -29,8 +29,8 @@
 <svelte:window onkeydown={(e) => e.key === 'Escape' && onClose()} />
 
 <AppBar class="sticky top-0 z-30 border-b border-surface-200-800 preset-filled-surface-100-900">
-	<AppBar.Toolbar class="flex">
-		<AppBar.Lead class="grow">
+	<AppBar.Toolbar class="grid-cols-[auto_1fr_auto]">
+		<AppBar.Lead>
 			<button
 				type="button"
 				class="btn-icon preset-tonal-surface btn-icon-lg"
@@ -42,10 +42,10 @@
 				<Menu />
 			</button>
 		</AppBar.Lead>
-		<AppBar.Headline>
+		<AppBar.Headline class="text-center">
 			<p class="text-lg font-bold">Social Link Guide</p>
 		</AppBar.Headline>
-		<AppBar.Trail class="grow justify-end">
+		<AppBar.Trail>
 			<button
 				type="button"
 				class="btn-icon preset-tonal-surface btn-icon-lg"
