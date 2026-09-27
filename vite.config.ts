@@ -1,3 +1,4 @@
+import svg from '@poppanator/sveltekit-svg';
 import tailwindcss from '@tailwindcss/vite';
 import adapter from '@sveltejs/adapter-static';
 import { sveltekit } from '@sveltejs/kit/vite';
@@ -30,6 +31,11 @@ export default defineConfig({
 				base: resolveBase(),
 				relative: false
 			}
+		}),
+		svg({
+			includePaths: ['./src/lib/icons/'],
+			// Bare `*.svg` imports stay URLs. `?component` inlines the file.
+			type: 'url'
 		})
 	]
 });

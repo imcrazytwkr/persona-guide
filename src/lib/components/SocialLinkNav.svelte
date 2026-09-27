@@ -15,6 +15,8 @@
 
 	import GameMenu from '$lib/components/GameMenu.svelte';
 	import SocialLinkMenu from '$lib/components/SocialLinkMenu.svelte';
+	import Menu from '$lib/icons/menu.svg?component';
+	import Swap from '$lib/icons/swap.svg?component';
 
 	let { game, links, arcana }: SocialLinkNavProps = $props();
 
@@ -37,14 +39,7 @@
 				aria-controls="social-link-nav"
 				onclick={() => (currentMenu = 'links')}
 			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 24 24"
-					fill="currentColor"
-					aria-hidden="true"
-				>
-					<path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
-				</svg>
+				<Menu />
 			</button>
 		</AppBar.Lead>
 		<AppBar.Headline>
@@ -59,14 +54,7 @@
 				aria-controls="game-nav"
 				onclick={() => (currentMenu = 'games')}
 			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 24 24"
-					fill="currentColor"
-					aria-hidden="true"
-				>
-					<path d="M6.99 11 3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z" />
-				</svg>
+				<Swap />
 			</button>
 		</AppBar.Trail>
 	</AppBar.Toolbar>

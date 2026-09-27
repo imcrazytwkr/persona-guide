@@ -14,6 +14,7 @@
 	import { resolve } from '$app/paths';
 
 	import { dataIndex } from '$lib/data';
+	import Close from '$lib/icons/close.svg?component';
 
 	const games = Object.values(dataIndex).sort();
 
@@ -31,8 +32,10 @@
 				type="button"
 				class="btn-icon preset-tonal-surface"
 				aria-label="Close menu"
-				onclick={onClose}>✕</button
+				onclick={onClose}
 			>
+				<Close />
+			</button>
 		</Navigation.Header>
 		<Navigation.Content class="flex-1 overflow-y-auto p-2">
 			<Navigation.Menu class="flex flex-col gap-1">
