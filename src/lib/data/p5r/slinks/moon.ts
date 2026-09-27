@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const moon: SocialLink = {
+export const moon = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Moon',
@@ -11,6 +12,7 @@ export const moon: SocialLink = {
 	unlock: 'Automatic story event on 5/6.',
 	availability:
 		'Nights any day of the week, including rainy days. Ranking up (from Rank 3) also requires completing Phan-Site / Mementos requests.',
+	routes: [],
 	ranks: [
 		{
 			rank: 1,
@@ -268,4 +270,4 @@ export const moon: SocialLink = {
 			unlocks: ['Sandalphon fusion', 'Salvation Wish']
 		}
 	]
-};
+});

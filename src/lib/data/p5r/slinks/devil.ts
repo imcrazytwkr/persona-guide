@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const devil: SocialLink = {
+export const devil = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Devil',
@@ -11,6 +12,7 @@ export const devil: SocialLink = {
 	unlock:
 		'After gaining access to Shinjuku, visit Crossroads and talk to Ohya (you will have met her earlier in the story).',
 	availability: 'Nights every day, including rainy days.',
+	routes: ['friendship', 'romance'],
 	ranks: [
 		{
 			rank: 1,
@@ -249,4 +251,4 @@ export const devil: SocialLink = {
 			unlocks: ['Beelzebub fusion', 'Legendary Scoop']
 		}
 	]
-};
+});

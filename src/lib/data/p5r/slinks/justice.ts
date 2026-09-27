@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const justice: SocialLink = {
+export const justice = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Justice',
@@ -11,6 +12,7 @@ export const justice: SocialLink = {
 	unlock: 'Unmissable story event on 6/10.',
 	availability:
 		'Wednesday and Saturday nights. Mid-July to mid-August also Tuesday and Saturday. Rank 6 triggers at Leblanc from 9/3. Must reach Rank 8 by 11/17.',
+	routes: [],
 	ranks: [
 		{
 			rank: 1,
@@ -244,4 +246,4 @@ export const justice: SocialLink = {
 			unlocks: ['Second Awakening (Hereward)', 'Metatron fusion', 'Protect', 'Endure']
 		}
 	]
-};
+});

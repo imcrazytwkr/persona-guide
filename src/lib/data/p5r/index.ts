@@ -1,4 +1,6 @@
-import type { GameData, GameId, GameRoute, SocialLink } from '$lib/types';
+import { defineGameData, type GameId } from '$lib/types';
+
+import { routes } from './routes';
 
 import {
 	fool,
@@ -30,12 +32,7 @@ export const id: GameId = 'p5r';
 
 export const title = 'Persona 5 Royal';
 
-const routes: GameRoute[] = [
-	{ id: 'friendship', label: 'Friendship' },
-	{ id: 'romance', label: 'Romance' }
-];
-
-export const socialLinks: SocialLink[] = [
+export const socialLinks = [
 	fool,
 	magician,
 	priestess,
@@ -61,4 +58,4 @@ export const socialLinks: SocialLink[] = [
 	councillor
 ];
 
-export const gameData = Object.freeze<GameData>({ id, title, routes, socialLinks });
+export const gameData = defineGameData({ id, title, routes, socialLinks });

@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const strength: SocialLink = {
+export const strength = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Strength',
@@ -10,6 +11,7 @@ export const strength: SocialLink = {
 	location: 'Velvet Room',
 	unlock: 'Unlocked automatically on 5/18.',
 	availability: 'Any time the Velvet Room is accessible.',
+	routes: [],
 	ranks: [
 		{
 			rank: 1,
@@ -72,4 +74,4 @@ export const strength: SocialLink = {
 			unlocks: ['Zaou-Gongen fusion', 'VIP Treatment']
 		}
 	]
-};
+});

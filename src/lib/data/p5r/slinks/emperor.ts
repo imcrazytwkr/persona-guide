@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const emperor: SocialLink = {
+export const emperor = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Emperor',
@@ -11,6 +12,7 @@ export const emperor: SocialLink = {
 	unlock: 'Unmissable event on 6/18. Talk to Yusuke at the underground passageway afterward.',
 	availability:
 		'Daytime every day; day and night on rainy days. Unavailable during some story events.',
+	routes: [],
 	ranks: [
 		{
 			rank: 1,
@@ -245,4 +247,4 @@ export const emperor: SocialLink = {
 			unlocks: ['Second Awakening (Kamu Susano-o)', 'Odin fusion']
 		}
 	]
-};
+});

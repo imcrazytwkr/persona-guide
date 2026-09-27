@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const faith: SocialLink = {
+export const faith = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Faith',
@@ -11,6 +12,7 @@ export const faith: SocialLink = {
 	unlock: 'Unmissable event on the 5/30 field trip.',
 	availability:
 		'Lunchtime during school and after school. In June, September, October, and November she is available only on Wednesday. In July, August, and December she is also occasionally available on Thursday and Sunday.',
+	routes: ['friendship', 'romance'],
 	ranks: [
 		{
 			rank: 1,
@@ -371,4 +373,4 @@ export const faith: SocialLink = {
 			unlocks: ['Second Awakening', 'Maria fusion', '+5 HP']
 		}
 	]
-};
+});

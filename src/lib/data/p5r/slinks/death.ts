@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const death: SocialLink = {
+export const death = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Death',
@@ -10,6 +11,7 @@ export const death: SocialLink = {
 	location: 'Takemi Medical Clinic, Yongen-Jaya',
 	unlock: 'After 4/18, visit the clinic in Yongen-Jaya and talk to her.',
 	availability: 'Daytime any day of the week. Day and night on rainy days.',
+	routes: ['friendship', 'romance'],
 	ranks: [
 		{
 			rank: 1,
@@ -266,4 +268,4 @@ export const death: SocialLink = {
 			unlocks: ['Alice fusion', 'Resuscitation']
 		}
 	]
-};
+});

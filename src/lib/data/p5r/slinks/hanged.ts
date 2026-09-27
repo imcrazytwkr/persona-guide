@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const hanged: SocialLink = {
+export const hanged = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Hanged Man',
@@ -12,6 +13,7 @@ export const hanged: SocialLink = {
 		"- After 5/6, see the airsoft shop event with the 'package' you have to hold.\n- Guts 4 (Dauntless)",
 	availability:
 		'Thursday, Saturday, and Sunday nights, and rainy days. Shop is open in the daytime but the social link only advances at night.',
+	routes: [],
 	ranks: [
 		{
 			rank: 1,
@@ -250,4 +252,4 @@ export const hanged: SocialLink = {
 			unlocks: ['Attis fusion', 'On The House', '+2 Proficiency']
 		}
 	]
-};
+});

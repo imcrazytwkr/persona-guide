@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const councillor: SocialLink = {
+export const councillor = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Councillor',
@@ -11,6 +12,7 @@ export const councillor: SocialLink = {
 	unlock: 'Unmissable event on 5/13.',
 	availability:
 		'Monday, Tuesday, Wednesday, and Friday daytime. Unlocked 5/13. Cannot pass Rank 5 until after 9/19. Must reach Rank 9 by 11/17 for Rank 10.',
+	routes: [],
 	ranks: [
 		{
 			rank: 1,
@@ -319,4 +321,4 @@ export const councillor: SocialLink = {
 			unlocks: ['Vohu Manah fusion', 'Wakefulness']
 		}
 	]
-};
+});

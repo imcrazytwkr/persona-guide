@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const tower: SocialLink = {
+export const tower = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Tower',
@@ -11,6 +12,7 @@ export const tower: SocialLink = {
 	unlock:
 		'On 9/4 Mishima texts about the Mementos request "Winners Don’t Use Cheats". Pursue it to meet Shinya.',
 	availability: 'Afternoons on Monday, Tuesday, and Thursday; Saturday daytime; also rainy days.',
+	routes: [],
 	ranks: [
 		{
 			rank: 1,
@@ -240,4 +242,4 @@ export const tower: SocialLink = {
 			unlocks: ['Mada fusion', 'Oda Special', '+3 Kindness']
 		}
 	]
-};
+});

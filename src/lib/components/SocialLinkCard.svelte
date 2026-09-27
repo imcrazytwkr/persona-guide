@@ -1,10 +1,17 @@
+<script lang="ts" module>
+	import type { SocialLink } from '$lib/types';
+
+	export type SocialLinkCardProps = {
+		link: SocialLink<string>;
+	};
+</script>
+
 <script lang="ts">
 	import { resolve } from '$app/paths';
 
 	import { getRankState, MAX_RANK } from '$lib/state/rank';
-	import type { SocialLink } from '$lib/types';
 
-	let { link }: { link: SocialLink } = $props();
+	let { link }: SocialLinkCardProps = $props();
 
 	const ranks = getRankState();
 	const current = $derived(ranks.getRank(link.arcana.value));

@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const sun: SocialLink = {
+export const sun = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Sun',
@@ -11,6 +12,7 @@ export const sun: SocialLink = {
 	unlock:
 		'From 5/6, listen to Yoshida at Station Square, then apply at the nearby Beef Bowl Shop via station leaflets. Work there twice to start the social link.',
 	availability: 'Sunday nights. Unavailable after November 13.',
+	routes: [],
 	ranks: [
 		{
 			rank: 1,
@@ -210,4 +212,4 @@ export const sun: SocialLink = {
 			unlocks: ['Asura fusion', 'Charismatic Speech', '+3 Charm']
 		}
 	]
-};
+});

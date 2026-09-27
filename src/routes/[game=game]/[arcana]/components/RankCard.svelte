@@ -1,34 +1,27 @@
+<script lang="ts" module>
+	import type { SocialLinkDialogueChoice, SocialLinkRank } from '$lib/types';
+
+	export type RankCardProps = {
+		arcana: string;
+		rank: SocialLinkRank<string>;
+		activeRoute: string;
+		routes: Record<string, string>;
+	};
+
+	const getChoicesForRoute = (route: string) => (choice: SocialLinkDialogueChoice<string>) =>
+		!choice.route || choice.route === route;
+</script>
+
 <script lang="ts">
 	import Notes from '$lib/components/Notes.svelte';
 	import { getRankState } from '$lib/state/rank';
-	import type { DialogueChoice, GameRoute, Rank, RouteId } from '$lib/types';
 
-	let {
-		arcana,
-		rank,
-		activeRoute,
-		routes
-	}: {
-		arcana: string;
-		rank: Rank;
-		activeRoute: RouteId;
-		routes: GameRoute[];
-	} = $props();
+	let { arcana, rank, activeRoute, routes }: RankCardProps = $props();
 
 	const ranks = getRankState();
 	const current = $derived(ranks.getRank(arcana));
 	const checked = $derived(current >= rank.rank);
-	const visibleChoices = $derived(
-		rank.choices.filter((choice) => choiceVisible(choice, activeRoute))
-	);
-
-	function choiceVisible(choice: DialogueChoice, route: RouteId): boolean {
-		return !choice.route || choice.route === route;
-	}
-
-	function routeLabel(id: RouteId): string {
-		return routes.find((route) => route.id === id)?.label ?? id;
-	}
+	const visibleChoices = $derived(rank.choices.filter(getChoicesForRoute(activeRoute)));
 </script>
 
 <article
@@ -63,7 +56,7 @@
 										{option.text}
 										{#if option.routeFlag}
 											<span class="chip preset-tonal-secondary">
-												{routeLabel(option.routeFlag)}
+												{routes[option.routeFlag]}
 											</span>
 										{/if}
 									</span>

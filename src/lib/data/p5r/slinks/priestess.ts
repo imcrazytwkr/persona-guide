@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const priestess: SocialLink = {
+export const priestess = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Priestess',
@@ -11,6 +12,7 @@ export const priestess: SocialLink = {
 	unlock:
 		'- After 6/24, talk to Makoto in front of the student council room.\n- Knowledge 3 (Scholarly)',
 	availability: 'Daytime on Tuesday, Thursday, Saturday, and Sunday; day and night on rainy days.',
+	routes: ['friendship', 'romance'],
 	ranks: [
 		{
 			rank: 1,
@@ -316,4 +318,4 @@ export const priestess: SocialLink = {
 			unlocks: ['Second Awakening (Anat)', 'Cybele fusion']
 		}
 	]
-};
+});

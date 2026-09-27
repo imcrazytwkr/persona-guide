@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const hierophant: SocialLink = {
+export const hierophant = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Hierophant',
@@ -10,6 +11,7 @@ export const hierophant: SocialLink = {
 	location: 'Leblanc',
 	unlock: 'Unlocks as the story progresses; hang out with Sojiro at Leblanc at night.',
 	availability: 'Nighttime every day except Wednesday. Day and night on rainy days.',
+	routes: [],
 	ranks: [
 		{
 			rank: 1,
@@ -229,4 +231,4 @@ export const hierophant: SocialLink = {
 			unlocks: ['Kohryu fusion', 'Curry Mastery', 'Kanda Church']
 		}
 	]
-};
+});

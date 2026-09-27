@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const temperance: SocialLink = {
+export const temperance = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Temperance',
@@ -12,6 +13,7 @@ export const temperance: SocialLink = {
 		'- On 5/24, go to the maid-request event with Ryuji. Afterward, talk to Kawakami in the 2F hallway for her number, then call her from the yellow phone in Leblanc.\n- Guts 3 (Staunch)',
 	availability:
 		'Friday and Saturday nights (also rainy nights). Call from the yellow phone in Leblanc (5,000 yen until Rank 9). Must be maxed by November 18.',
+	routes: ['friendship', 'romance'],
 	ranks: [
 		{
 			rank: 1,
@@ -289,4 +291,4 @@ export const temperance: SocialLink = {
 			unlocks: ['Ardha fusion', 'Special Massage']
 		}
 	]
-};
+});

@@ -1,18 +1,19 @@
+<script lang="ts" module>
+	import type { GameId, SocialLink } from '$lib/types';
+
+	export type SocialLinkNavProps = {
+		game: GameId;
+		links: SocialLink<string>[];
+		arcana?: string;
+	};
+</script>
+
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { getRankState } from '$lib/state/rank';
-	import type { GameId, SocialLink } from '$lib/types';
 	import { AppBar, Navigation } from '@skeletonlabs/skeleton-svelte';
 
-	let {
-		game,
-		links,
-		arcana
-	}: {
-		game: GameId;
-		links: SocialLink[];
-		arcana?: string;
-	} = $props();
+	let { game, links, arcana }: SocialLinkNavProps = $props();
 
 	const ranks = getRankState();
 

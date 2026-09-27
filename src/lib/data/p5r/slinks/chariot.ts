@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const chariot: SocialLink = {
+export const chariot = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Chariot',
@@ -10,6 +11,7 @@ export const chariot: SocialLink = {
 	location: 'School after school; arcade on days off',
 	unlock: 'Unmissable event on 4/12.',
 	availability: 'Daytime every day of the week; day and night on rainy days.',
+	routes: [],
 	ranks: [
 		{
 			rank: 1,
@@ -269,4 +271,4 @@ export const chariot: SocialLink = {
 			unlocks: ['Second Awakening (Seiten Taisei)', 'Chi You fusion']
 		}
 	]
-};
+});

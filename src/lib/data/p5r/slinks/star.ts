@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const star: SocialLink = {
+export const star = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Star',
@@ -10,6 +11,7 @@ export const star: SocialLink = {
 	location: 'Kanda Church',
 	unlock: '- From 6/25, visit Kanda Church and talk to Hifumi near the front.\n- Charm 3 (Suave)',
 	availability: 'Nights at Kanda Church.',
+	routes: ['friendship', 'romance'],
 	ranks: [
 		{
 			rank: 1,
@@ -247,4 +249,4 @@ export const star: SocialLink = {
 			unlocks: ['Lucifer fusion', 'Togo System']
 		}
 	]
-};
+});

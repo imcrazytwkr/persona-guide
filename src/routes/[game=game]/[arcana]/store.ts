@@ -1,4 +1,4 @@
-import type { GameId, GameRoute, RouteId, SocialLink } from '$lib/types';
+import type { GameId, SocialLink } from '$lib/types';
 import { invalidate } from '$app/navigation';
 
 const routeStorageKey = (game: GameId, arcana: string): `${string}:${string}` =>
@@ -10,27 +10,19 @@ const cacheKey = (key: string): `${string}:${string}` => `local:${key}`;
 export const localStorageKey = (game: GameId, arcana: string): `${string}:${string}` =>
 	cacheKey(routeStorageKey(game, arcana));
 
-const emptyGetter = (): RouteId => '';
-
-export const routeGetter = (routes: GameRoute[]) => {
-	if (routes.length < 1) {
-		return emptyGetter;
+export function getRoute(socialLink?: SocialLink<string>) {
+	if (!socialLink || socialLink.routes.length < 1) {
+		return '';
 	}
 
-	const fallback: RouteId = routes[0].id;
-	return (socialLink?: SocialLink) => {
-		if (!socialLink) {
-			return fallback;
-		}
-
-		const raw = localStorage.getItem(routeStorageKey(socialLink.game, socialLink.arcana.value));
-		return raw && routes.some((r) => r.id === raw) ? raw : fallback;
-	};
-};
+	const routes: string[] = socialLink.routes;
+	const raw = localStorage.getItem(routeStorageKey(socialLink.game, socialLink.arcana.value));
+	return raw && routes.includes(raw) ? raw : socialLink.routes[0];
+}
 
 const noop = () => Promise.resolve();
 
-export const routeSetter = (socialLink?: SocialLink) => {
+export const routeSetter = (socialLink?: SocialLink<string>) => {
 	if (!socialLink) {
 		return noop;
 	}

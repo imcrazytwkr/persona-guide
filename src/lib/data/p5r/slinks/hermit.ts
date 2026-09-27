@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const hermit: SocialLink = {
+export const hermit = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Hermit',
@@ -11,6 +12,7 @@ export const hermit: SocialLink = {
 	unlock: 'Unmissable nighttime event on 8/31.',
 	availability:
 		'Wednesday, Thursday, Saturday, and Sunday daytime. Stays indoors when it rains. Progress can be blocked by a Hierophant (Sojiro) side quest.',
+	routes: ['friendship', 'romance'],
 	ranks: [
 		{
 			rank: 1,
@@ -277,4 +279,4 @@ export const hermit: SocialLink = {
 			unlocks: ['Second Awakening (Prometheus)', 'Ongyo-Ki fusion', 'Final Guard']
 		}
 	]
-};
+});

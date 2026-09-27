@@ -1,12 +1,7 @@
 <script lang="ts" module>
-	import type { DialogueChoice, DialogueOption, Rank, SocialLink } from '$lib/types';
+	import type { SocialLink } from '$lib/types';
 
-	const optionHasRoutes = (option: DialogueOption) => Boolean(option.routeFlag);
-	const choiceHasRoutes = (choice: DialogueChoice) =>
-		Boolean(choice.route) || choice.options.some(optionHasRoutes);
-
-	const rankHasRoutes = (rank: Rank) => rank.choices.some(choiceHasRoutes);
-	const linkHasRoutes = (link: SocialLink) => link.ranks.some(rankHasRoutes);
+	const linkHasRoutes = (link: SocialLink<string>) => link.routes.length > 1;
 </script>
 
 <script lang="ts">
@@ -19,7 +14,7 @@
 	import RankCard from './components/RankCard.svelte';
 
 	const { data }: PageProps = $props();
-	const { link, activeRoute } = $derived(data);
+	const { link, routes, activeRoute } = $derived(data);
 
 	const ranks = getRankState();
 	const currentRank = $derived(link ? ranks.getRank(link.arcana.value) : 0);
@@ -40,15 +35,15 @@
 				role="radiogroup"
 				aria-label="Route"
 			>
-				{#each data.routes as route (route.id)}
+				{#each link.routes as id}
 					<button
 						type="button"
 						role="radio"
-						aria-checked={activeRoute === route.id}
-						class="btn {activeRoute === route.id ? 'preset-filled-primary-500' : 'preset-tonal'}"
-						onclick={() => setRoute(route.id)}
+						aria-checked={activeRoute === id}
+						class="btn {activeRoute === id ? 'preset-filled-primary-500' : 'preset-tonal'}"
+						onclick={() => setRoute(id)}
 					>
-						{route.label}
+						{routes[id]}
 					</button>
 				{/each}
 			</div>

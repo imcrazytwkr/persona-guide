@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const fool: SocialLink = {
+export const fool = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Fool',
@@ -10,6 +11,7 @@ export const fool: SocialLink = {
 	location: 'Velvet Room',
 	unlock: 'Automatically on 4/12.',
 	availability: 'Ranks up automatically with story events. No hangouts.',
+	routes: [],
 	ranks: [
 		{
 			rank: 1,
@@ -72,4 +74,4 @@ export const fool: SocialLink = {
 			unlocks: ['Vishnu fusion', 'Max Arcana Burst']
 		}
 	]
-};
+});

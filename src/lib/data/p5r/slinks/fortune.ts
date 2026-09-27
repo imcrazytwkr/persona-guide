@@ -1,6 +1,7 @@
-import type { SocialLink } from '$lib/types';
+import { defineSocialLink } from '$lib/types';
+import type { RouteKey } from '../routes';
 
-export const fortune: SocialLink = {
+export const fortune = defineSocialLink<RouteKey>({
 	game: 'p5r',
 	arcana: {
 		label: 'Fortune',
@@ -11,6 +12,7 @@ export const fortune: SocialLink = {
 	unlock:
 		'From 6/22: get a prediction, buy the Holy Stone for 100,000 yen, return about the stone, complete Mementos request "Ending the Boyfriend\'s Abuse", then see Chihaya again.',
 	availability: 'Tuesday, Thursday, Saturday, and Sunday nights. Not available when raining.',
+	routes: ['friendship', 'romance'],
 	ranks: [
 		{
 			rank: 1,
@@ -215,4 +217,4 @@ export const fortune: SocialLink = {
 			unlocks: ['Lakshmi fusion', 'True Affinity Reading']
 		}
 	]
-};
+});
