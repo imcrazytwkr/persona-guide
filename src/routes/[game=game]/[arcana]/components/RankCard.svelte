@@ -8,11 +8,12 @@
 		routes: Record<string, string>;
 	};
 
-	const getChoicesForRoute = (route: string) => (choice: SocialLinkDialogueChoice<string>) =>
+	const choicesForRoute = (route: string) => (choice: SocialLinkDialogueChoice<string>) =>
 		!choice.route || choice.route === route;
 </script>
 
 <script lang="ts">
+	import { type OptionEffect, OPTION_EFFECT_LABELS } from '$lib/constants';
 	import Notes from '$lib/components/Notes.svelte';
 	import { getRankState } from '$lib/state/rank';
 
@@ -21,7 +22,7 @@
 	const ranks = getRankState();
 	const current = $derived(ranks.getRank(arcana));
 	const checked = $derived(current >= rank.rank);
-	const visibleChoices = $derived(rank.choices.filter(getChoicesForRoute(activeRoute)));
+	const visibleChoices = $derived(rank.choices.filter(choicesForRoute(activeRoute)));
 </script>
 
 <article
@@ -57,6 +58,11 @@
 										{#if option.routeFlag}
 											<span class="chip preset-tonal-secondary">
 												{routes[option.routeFlag]}
+											</span>
+										{/if}
+										{#if option.effect}
+											<span class="chip preset-tonal-secondary">
+												{OPTION_EFFECT_LABELS[option.effect]}
 											</span>
 										{/if}
 									</span>

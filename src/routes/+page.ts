@@ -1,6 +1,6 @@
-import { resolve } from '$app/paths';
-import { redirect } from '@sveltejs/kit';
+import { dataIndex } from '$lib/data';
+import type { PageLoad } from './$types';
 
-export function load() {
-	redirect(307, resolve('/p5r'));
-}
+export const load: PageLoad = () => ({
+	games: Object.values(dataIndex).map((game) => ({ id: game.id, title: game.title }))
+});

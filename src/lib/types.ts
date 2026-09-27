@@ -1,9 +1,12 @@
-export type GameId = 'p5r';
+import type { OptionEffect } from './constants';
 
-export type DialogueOption<K extends string = string> = {
+export type GameId = 'p5r' | 'p4g';
+
+export type DialogueOption<K extends string> = {
 	text: string;
 	points: number;
 	routeFlag?: K;
+	effect?: OptionEffect;
 };
 
 export type Arcana = {
