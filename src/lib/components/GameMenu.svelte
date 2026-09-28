@@ -43,7 +43,7 @@
 					<Navigation.TriggerAnchor
 						href={resolve(`/${g.id}`)}
 						class="btn w-full justify-start {g.id === game
-							? 'preset-filled-primary-500'
+							? 'preset-filled-brand'
 							: 'preset-tonal-surface'}"
 						aria-current={g.id === game ? 'page' : undefined}
 						onclick={onClose}

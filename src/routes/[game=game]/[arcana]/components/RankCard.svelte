@@ -66,7 +66,7 @@
 											</span>
 										{/if}
 									</span>
-									<span class="chip preset-filled-primary-500">+{option.points}</span>
+									<span class="chip preset-filled-brand">+{option.points}</span>
 								</li>
 							{/each}
 						</ul>

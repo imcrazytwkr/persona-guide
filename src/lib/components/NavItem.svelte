@@ -15,7 +15,7 @@
 <a
 	{href}
 	class="flex w-full items-center justify-between gap-2 rounded-base px-2 py-1 text-base no-underline hover:brightness-125 dark:hover:brightness-75 {active
-		? 'preset-filled-primary-500'
+		? 'preset-filled-brand'
 		: 'preset-tonal-surface'}"
 	aria-current={active ? 'page' : undefined}
 	{onclick}

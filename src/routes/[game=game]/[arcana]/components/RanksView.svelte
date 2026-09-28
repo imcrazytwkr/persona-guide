@@ -51,7 +51,7 @@
 	<p class="text-sm opacity-80">{link.availability}</p>
 	{#if multiRoute}
 		<div
-			class="mt-3 btn-group flex-row flex-wrap gap-2 preset-outlined-primary-500"
+			class="mt-3 btn-group flex-row flex-wrap gap-2 preset-outlined-brand"
 			role="radiogroup"
 			aria-label="Route"
 		>
@@ -60,7 +60,7 @@
 					type="button"
 					role="radio"
 					aria-checked={activeRoute === id}
-					class="btn {activeRoute === id ? 'preset-filled-primary-500' : 'preset-tonal'}"
+					class="btn {activeRoute === id ? 'preset-filled-brand' : 'preset-tonal'}"
 					onclick={() => setRoute(id)}
 				>
 					{routes[id]}

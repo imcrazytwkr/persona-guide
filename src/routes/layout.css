@@ -2,3 +2,19 @@
 @import '@skeletonlabs/skeleton';
 @import '@skeletonlabs/skeleton-svelte';
 @import '@skeletonlabs/skeleton/themes/crimson';
+
+.game-accent-p5r {
+	--color-brand-light: #b01030;
+	--color-brand-dark: #d21d3d;
+	/* Text color for when accent color is used for background */
+	--color-brand-contrast-light: white;
+	--color-brand-contrast-dark: white;
+}
+
+.game-accent-p4g {
+	--color-brand-light: #b8860b;
+	--color-brand-dark: #f9d544;
+	/* Text color for when accent color is used for background */
+	--color-brand-contrast-light: black;
+	--color-brand-contrast-dark: black;
+}

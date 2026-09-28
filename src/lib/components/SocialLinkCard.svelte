@@ -25,7 +25,7 @@
 			<h2 class="text-lg font-bold">{link.name}</h2>
 		</div>
 		{#if current < MAX_RANK}
-			<span class="chip preset-filled-primary-500">Rank {current}</span>
+			<span class="chip preset-filled-brand">Rank {current}</span>
 		{:else}
 			<span class="chip preset-filled-success-500">Max</span>
 		{/if}
