@@ -29,4 +29,3 @@ vite.config.ts.timestamp-*
 
 # Temp data
 src/**/*.html
-src/**/*.md

@@ -1,42 +1,13 @@
-# sv
+# Persona Social Link Guide
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+The app is available at [imcrazytwkr.github.io/persona-guide](https://imcrazytwkr.github.io/persona-guide/).
 
-## Creating a project
+## Licensing
 
-If you're seeing this, you've probably already done this step. Congrats!
+The code of the app itself is licensed under [Apache 2.0](LICENSE).
 
-```sh
-# create a new project
-npx sv create my-app
-```
+Licensing information for the Social Link data is provided in their respective
+data directories:
 
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.17.0 create --template minimal --types ts --add tailwindcss="plugins:none" sveltekit-adapter="adapter:auto" --no-download-check --install npm .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- [Persona 4 Golden](src/lib/data/p4g/slinks/README.md)
+- [Persona 5 Royal](src/lib/data/p5r/slinks/README.md)
