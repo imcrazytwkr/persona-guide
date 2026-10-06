@@ -1,6 +1,6 @@
-import { defineGameData, type GameId } from '$lib/types';
+import { defineGameData, type GameId } from '#lib/types.ts';
 
-import { routes } from './routes';
+import { routes } from './p5r/routes.ts';
 
 import {
 	fool,
@@ -26,7 +26,7 @@ import {
 	judgement,
 	faith,
 	councillor
-} from './slinks';
+} from './p5r/slinks.ts';
 
 export const id: GameId = 'p5r';
 

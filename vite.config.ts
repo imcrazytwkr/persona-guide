@@ -30,6 +30,10 @@ export default defineConfig({
 			paths: {
 				base: resolveBase(),
 				relative: false
+			},
+			// Kit 3 polls hourly by default. Keep the previous off-by-default behavior.
+			version: {
+				pollInterval: 0
 			}
 		}),
 		svg({

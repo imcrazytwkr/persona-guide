@@ -1,4 +1,4 @@
-import { dataIndex } from '$lib/data';
+import { dataIndex } from '#lib/data.ts';
 
 import type { LayoutLoad } from './$types';
 

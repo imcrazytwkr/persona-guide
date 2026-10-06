@@ -1,5 +1,5 @@
-import { defineSocialLink } from '$lib/types';
-import type { RouteKey } from '../routes';
+import { defineSocialLink } from '#lib/types.ts';
+import type { RouteKey } from '#lib/data/p4g/routes.ts';
 
 export const death = defineSocialLink<RouteKey>({
 	game: 'p4g',

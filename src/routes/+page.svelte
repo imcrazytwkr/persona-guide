@@ -11,7 +11,7 @@
 		{#each data.games as game (game.id)}
 			<li>
 				<a
-					href={resolve(`/${game.id}`)}
+					href={resolve(`${game.id}`)}
 					class="flex flex-col gap-1 card preset-filled-surface-100-900 p-4"
 				>
 					<h2 class="text-lg font-bold">{game.title}</h2>

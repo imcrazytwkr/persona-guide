@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import type { GameId, SocialLink } from '$lib/types';
+	import type { GameId, SocialLink } from '#lib/types.ts';
 
 	export type SocialLinkNavProps = {
 		game: GameId;
@@ -13,10 +13,10 @@
 <script lang="ts">
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
 
-	import GameMenu from '$lib/components/GameMenu.svelte';
-	import SocialLinkMenu from '$lib/components/SocialLinkMenu.svelte';
-	import Menu from '$lib/icons/menu.svg?component';
-	import Swap from '$lib/icons/swap.svg?component';
+	import GameMenu from '#lib/components/GameMenu.svelte';
+	import SocialLinkMenu from '#lib/components/SocialLinkMenu.svelte';
+	import Menu from '#lib/icons/menu.svg?component';
+	import Swap from '#lib/icons/swap.svg?component';
 
 	let { game, links, arcana }: SocialLinkNavProps = $props();
 

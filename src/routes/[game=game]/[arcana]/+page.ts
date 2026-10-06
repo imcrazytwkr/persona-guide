@@ -1,4 +1,4 @@
-import { localStorageKey, getRoute } from './store';
+import { localStorageKey, getRoute } from './store.ts';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ params, parent, depends }) => {

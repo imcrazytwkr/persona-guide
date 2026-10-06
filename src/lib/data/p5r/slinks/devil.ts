@@ -1,5 +1,5 @@
-import { defineSocialLink } from '$lib/types';
-import type { RouteKey } from '../routes';
+import { defineSocialLink } from '#lib/types.ts';
+import type { RouteKey } from '#lib/data/p5r/routes.ts';
 
 export const devil = defineSocialLink<RouteKey>({
 	game: 'p5r',

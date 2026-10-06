@@ -1,4 +1,4 @@
-import type { GameId, SocialLink } from '$lib/types';
+import type { GameId, SocialLink } from '#lib/types.ts';
 import { invalidate } from '$app/navigation';
 
 const routeStorageKey = (game: GameId, arcana: string): `${string}:${string}` =>

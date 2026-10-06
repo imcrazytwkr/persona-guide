@@ -1,6 +1,6 @@
-import { defineGameData, type GameId } from '$lib/types';
+import { defineGameData, type GameId } from '#lib/types.ts';
 
-import { routes } from './routes';
+import { routes } from './p4g/routes.ts';
 
 import {
 	aeon,
@@ -28,7 +28,7 @@ import {
 	sunDrama,
 	temperance,
 	tower
-} from './slinks';
+} from './p4g/slinks.ts';
 
 export const id: GameId = 'p4g';
 

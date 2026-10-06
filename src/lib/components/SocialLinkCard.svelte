@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import type { SocialLink } from '$lib/types';
+	import type { SocialLink } from '#lib/types.ts';
 
 	export type SocialLinkCardProps = {
 		link: SocialLink<string>;
@@ -9,13 +9,13 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 
-	import { getRankState, MAX_RANK } from '$lib/state/rank';
+	import { getRankState, MAX_RANK } from '#lib/state/rank.ts';
 
 	let { link }: SocialLinkCardProps = $props();
 
 	const ranks = getRankState();
 	const current = $derived(ranks.getRank(link.arcana.value));
-	const href = $derived(resolve(`/${link.game}/${link.arcana.value}`));
+	const href = $derived(resolve(`${link.game}/${link.arcana.value}`));
 </script>
 
 <a {href} class="flex flex-col gap-3 card preset-filled-surface-100-900 p-4">

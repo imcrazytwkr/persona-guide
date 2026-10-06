@@ -1,7 +1,7 @@
 import { SvelteMap } from 'svelte/reactivity';
 import { createContext } from 'svelte';
 
-import type { GameId } from '../types';
+import type { GameId } from '#lib/types.ts';
 
 const [getState, setState] = createContext<RankState>();
 export const getRankState = getState;

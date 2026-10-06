@@ -1,6 +1,6 @@
 <script lang="ts">
-	import RankProvider from '$lib/components/RankProvider.svelte';
-	import SocialLinkNav from '$lib/components/SocialLinkNav.svelte';
+	import RankProvider from '#lib/components/RankProvider.svelte';
+	import SocialLinkNav from '#lib/components/SocialLinkNav.svelte';
 	import type { LayoutProps } from './$types';
 
 	const { data, params, children }: LayoutProps = $props();

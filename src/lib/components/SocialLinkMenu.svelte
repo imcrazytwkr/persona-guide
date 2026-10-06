@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import type { GameId, SocialLink } from '$lib/types';
+	import type { GameId, SocialLink } from '#lib/types.ts';
 
 	export type SocialLinkMenuProps = {
 		open: boolean;
@@ -15,9 +15,9 @@
 
 	import { resolve } from '$app/paths';
 
-	import NavItem from '$lib/components/NavItem.svelte';
-	import Close from '$lib/icons/close.svg?component';
-	import { getRankState } from '$lib/state/rank';
+	import NavItem from '#lib/components/NavItem.svelte';
+	import Close from '#lib/icons/close.svg?component';
+	import { getRankState } from '#lib/state/rank.ts';
 
 	let { open, onClose, game, links, arcana }: SocialLinkMenuProps = $props();
 
@@ -43,14 +43,14 @@
 		<Navigation.Content class="flex-1 overflow-y-auto p-2">
 			<Navigation.Menu>
 				<NavItem
-					href={resolve(`/${game}`)}
+					href={resolve(`${game}`)}
 					label="All social links"
 					active={!arcana}
 					onclick={onClose}
 				/>
 				{#each links as link (link.arcana.value)}
 					<NavItem
-						href={resolve(`/${game}/${link.arcana.value}`)}
+						href={resolve(`${game}/${link.arcana.value}`)}
 						label={link.arcana.label}
 						rank={ranks.getRank(link.arcana.value)}
 						active={arcana === link.arcana.value}

@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import type { SocialLinkDialogueChoice, SocialLinkRank } from '$lib/types';
+	import type { SocialLinkDialogueChoice, SocialLinkRank } from '#lib/types.ts';
 
 	export type RankCardProps = {
 		arcana: string;
@@ -13,9 +13,9 @@
 </script>
 
 <script lang="ts">
-	import { type OptionEffect, OPTION_EFFECT_LABELS } from '$lib/constants';
-	import Notes from '$lib/components/Notes.svelte';
-	import { getRankState } from '$lib/state/rank';
+	import { type OptionEffect, OPTION_EFFECT_LABELS } from '#lib/constants.ts';
+	import Notes from '#lib/components/Notes.svelte';
+	import { getRankState } from '#lib/state/rank.ts';
 
 	let { arcana, rank, activeRoute, routes }: RankCardProps = $props();
 

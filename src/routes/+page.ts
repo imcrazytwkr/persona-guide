@@ -1,4 +1,4 @@
-import { dataIndex } from '$lib/data';
+import { dataIndex } from '#lib/data.ts';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = () => ({

@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import type { GameId } from '$lib/types';
+	import type { GameId } from '#lib/types.ts';
 
 	export type GameMenuProps = {
 		open: boolean;
@@ -13,8 +13,8 @@
 
 	import { resolve } from '$app/paths';
 
-	import { dataIndex } from '$lib/data';
-	import Close from '$lib/icons/close.svg?component';
+	import { dataIndex } from '#lib/data.ts';
+	import Close from '#lib/icons/close.svg?component';
 
 	const games = Object.values(dataIndex).sort();
 
@@ -41,7 +41,7 @@
 			<Navigation.Menu>
 				{#each games as g (g.id)}
 					<Navigation.TriggerAnchor
-						href={resolve(`/${g.id}`)}
+						href={resolve(`${g.id}`)}
 						class="btn w-full justify-start {g.id === game
 							? 'preset-filled-brand'
 							: 'preset-tonal-surface'}"

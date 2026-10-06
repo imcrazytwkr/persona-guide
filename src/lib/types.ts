@@ -1,4 +1,4 @@
-import type { OptionEffect } from './constants';
+import type { OptionEffect } from '#lib/constants.ts';
 
 export type GameId = 'p5r' | 'p4g';
 

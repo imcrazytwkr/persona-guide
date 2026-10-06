@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import type { SocialLink, SocialLinkRank } from '$lib/types';
+	import type { SocialLink, SocialLinkRank } from '#lib/types.ts';
 
 	export type RanksViewProps = {
 		link: SocialLink<string>;
@@ -26,10 +26,10 @@
 </script>
 
 <script lang="ts">
-	import Notes from '$lib/components/Notes.svelte';
-	import { getRankState } from '$lib/state/rank';
+	import Notes from '#lib/components/Notes.svelte';
+	import { getRankState } from '#lib/state/rank.ts';
 
-	import { routeSetter } from '../store';
+	import { routeSetter } from '../store.ts';
 	import RankCard from './RankCard.svelte';
 
 	const { link, routes, activeRoute }: RanksViewProps = $props();

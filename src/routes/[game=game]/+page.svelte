@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SocialLinkCard from '$lib/components/SocialLinkCard.svelte';
+	import SocialLinkCard from '#lib/components/SocialLinkCard.svelte';
 	import type { PageProps } from './$types';
 
 	const { data }: PageProps = $props();

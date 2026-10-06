@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { RankState, setRankState } from '$lib/state/rank';
-	import type { GameId } from '$lib/types';
+	import { RankState, setRankState } from '#lib/state/rank.ts';
+	import type { GameId } from '#lib/types.ts';
 	import type { Snippet } from 'svelte';
 
 	let { game, children }: { game: GameId; children: Snippet } = $props();
